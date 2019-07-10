@@ -1,0 +1,107 @@
+<h2 id='profile-axies'>Profile Axies</h2>
+<blockquote>
+<p>Returns JSON structured like this:</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"totalAxies"</span><span class="p">:</span><span class="w"> </span><span class="mi">2416</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"axies"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="err">SingleAxieJSON</span><span class="p">,</span><span class="w">
+    </span><span class="err">...</span><span class="w">
+  </span><span class="p">]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<p>Allows to retrieve data on Axies from given profile. Returns up to 12 Axies. Can be filtered with various parameters.</p>
+<h3 id='endpoint'>Endpoint</h3>
+<p><code>GET /addresses/&lt;ETH_ADDRESS&gt;/axies</code></p>
+
+<h3 id='url-parameters'>URL Parameters</h3>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>ETH_ADDRESS</td>
+<td>Ethereum Address of profile to retrieve</td>
+</tr>
+</tbody></table>
+
+<h3 id='query-parameters'>Query Parameters</h3>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Default</th>
+<th>Options</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>lang</td>
+<td>en</td>
+<td>-</td>
+<td>Parameter for language data.</td>
+</tr>
+<tr>
+<td>offset</td>
+<td>0</td>
+<td>number</td>
+<td>Offset is used for pagination through filtered Axies, skipping amount of Axies set to offset and returning next batch of 12.</td>
+</tr>
+<tr>
+<td>sale</td>
+<td>any</td>
+<td>1, 2?</td>
+<td>Results will include Axies which are on auction (1- sale?, 2- siring? to test)</td>
+</tr>
+<tr>
+<td>breedable</td>
+<td>false</td>
+<td>yes</td>
+<td>If set to yes, results will include Axies, which are breedable.</td>
+</tr>
+<tr>
+<td>stage</td>
+<td>any</td>
+<td>number <1, 4></td>
+<td>Stage of Axies, 1 - Egg, 2 - Larva, 3 - Petite, 4 - Adult.</td>
+</tr>
+<tr>
+<td>class</td>
+<td>any</td>
+<td>beast, aquatic, plant, bird, bug, reptile, hidden_1, hidden_2, hidden_3</td>
+<td>Results will include Axies from specified class/classes.</td>
+</tr>
+<tr>
+<td>region</td>
+<td>any</td>
+<td>japan</td>
+<td>Results will include Axies from specified region (which were birth with region option other than default).</td>
+</tr>
+<tr>
+<td>title</td>
+<td>any</td>
+<td>origin, meo%20corp</td>
+<td>Results will include Axies with specified tags.</td>
+</tr>
+<tr>
+<td>mystic</td>
+<td>any</td>
+<td>true</td>
+<td>If set to true, results will include Mystic Axies.</td>
+</tr>
+<tr>
+<td>num_mystic</td>
+<td>any</td>
+<td>number <1, 6></td>
+<td>Results will include Axies which have specified number of Mystic parts.</td>
+</tr>
+<tr>
+<td>pureness</td>
+<td>any</td>
+<td>number <1, 6></td>
+<td>Results will include Axies which have specified pureness of their parts.</td>
+</tr>
+</tbody></table>

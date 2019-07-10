@@ -1,0 +1,14 @@
+<h3 id='headers-parameters'>Headers Parameters</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Value</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>Authorization</td>
+<td>string: <code>Bearer &lt;TOKEN&gt;</code></td>
+<td>Token for GET and POST requests authorization.</td>
+</tr>
+</tbody></table>

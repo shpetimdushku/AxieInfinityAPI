@@ -1,0 +1,26 @@
+<h2 id='check-charm'>Check Charm</h2>
+<blockquote>
+<p>Returns JSON structured like this:</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"isCharmActivated"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"activatedTil"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1562483361"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<p>Allows to get data about charm (Bean&#39;s Blessing) for given ETH Address.</p>
+<h3 id='endpoint'>Endpoint</h3>
+<p><code>GET https://api.axieinfinity.com/v1/battle/battle/check-charm/&lt;ETH_ADDRESS&gt;</code></p>
+
+<h3 id='url-parameters'>URL Parameters</h3>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>ETH_ADDRESS</td>
+<td>Ethereum Address of profile to retrieve</td>
+</tr>
+</tbody></table>

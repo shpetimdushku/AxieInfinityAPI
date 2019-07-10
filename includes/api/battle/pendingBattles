@@ -1,0 +1,71 @@
+<h2 id='pending-battles'>Pending Battles</h2>
+<blockquote>
+<p>Returns JSON structured like this:</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"queue"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"teamId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"cd5b884c-03ac-45fe-aacf-f7c728e99035"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"teamName"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Wykop14"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"address"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0x3945476e477de76d53b4833a46c806ef3d72b21e"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"axieIds"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="mi">61370</span><span class="p">,</span><span class="w">
+        </span><span class="mi">61415</span><span class="p">,</span><span class="w">
+        </span><span class="mi">64269</span><span class="w">
+      </span><span class="p">],</span><span class="w">
+      </span><span class="s2">"createdAt"</span><span class="p">:</span><span class="w"> </span><span class="mi">1562778445</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="err">...</span><span class="w">
+  </span><span class="p">],</span><span class="w">
+  </span><span class="s2">"total"</span><span class="p">:</span><span class="w"> </span><span class="mi">20</span><span class="p">,</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<p>Allows to get data about pending battles.</p>
+<h3 id='endpoint'>Endpoint</h3>
+<p><code>GET https://api.axieinfinity.com/v1/battle/teams/pending/&lt;ETH_ADDRESS&gt;</code></p>
+
+<h3 id='url-parameters'>URL Parameters</h3>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>ETH_ADDRESS</td>
+<td>Ethereum Address of profile to retrieve</td>
+</tr>
+</tbody></table>
+<h3 id='query-parameters'>Query Parameters</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Default</th>
+<th>Options</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>offset</td>
+<td>0</td>
+<td>number</td>
+<td>Offset is used for pagination through pending battles.</td>
+</tr>
+</tbody></table>
+
+<h3 id='headers-parameters'>Headers Parameters</h3>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Value</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>Authorization</td>
+<td>string: <code>Bearer &lt;TOKEN&gt;</code></td>
+<td>Token for GET and POST requests authorization.</td>
+</tr>
+</tbody></table>

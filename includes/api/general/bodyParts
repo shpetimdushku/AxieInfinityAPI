@@ -1,0 +1,23 @@
+<h2 id='body-parts'>Body Parts</h2>
+<blockquote>
+<p>Returns JSON structured like this:</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">[</span><span class="w">
+  </span><span class="err">...</span><span class="p">,</span><span class="w">
+  </span><span class="p">{</span><span class="w">
+    </span><span class="s2">"partId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"mouth-lam-handsome"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"class"</span><span class="p">:</span><span class="w"> </span><span class="s2">"aquatic"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"specialGenes"</span><span class="p">:</span><span class="w"> </span><span class="s2">"mystic"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"mouth"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Lam Handsome"</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="err">...</span><span class="p">,</span><span class="w">
+</span><span class="p">]</span><span class="w">
+</span></code></pre>
+<p>Allows to retrieve some data of all body parts.</p>
+<h3 id='endpoint'>Endpoint</h3>
+<p><code>GET /body-parts</code></p>
+
+<aside class="success">
+  test
+</aside>

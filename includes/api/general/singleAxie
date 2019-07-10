@@ -1,0 +1,99 @@
+<h2 id='single-axie'>Single Axie</h2>
+<blockquote>
+<p>Returns JSON structured like this:</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">48133</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Axie #48133"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"genes"</span><span class="p">:</span><span class="w"> </span><span class="s2">"31209586552778604935104065586416217693789939714895764496264522953517210607944"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"owner"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0x3945476e477de76d53b4833a46c806ef3d72b21e"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"birthDate"</span><span class="p">:</span><span class="w"> </span><span class="mi">1554629529</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"sireId"</span><span class="p">:</span><span class="w"> </span><span class="mi">20426</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"sireClass"</span><span class="p">:</span><span class="w"> </span><span class="s2">"aquatic"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"matronId"</span><span class="p">:</span><span class="w"> </span><span class="mi">35323</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"matronClass"</span><span class="p">:</span><span class="w"> </span><span class="s2">"aquatic"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"stage"</span><span class="p">:</span><span class="w"> </span><span class="mi">4</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"class"</span><span class="p">:</span><span class="w"> </span><span class="s2">"aquatic"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"title"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"parts"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="err">...</span><span class="p">,</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"mouth-silence-whisper"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Silence Whisper"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"class"</span><span class="p">:</span><span class="w"> </span><span class="s2">"plant"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"mouth"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"mystic"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"bionic"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"xmas"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"stage"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"moves"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+          </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"mouth-forest-spirit"</span><span class="p">,</span><span class="w">
+          </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Forest Spirit"</span><span class="p">,</span><span class="w">
+          </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"support"</span><span class="p">,</span><span class="w">
+          </span><span class="s2">"attack"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+          </span><span class="s2">"defense"</span><span class="p">:</span><span class="w"> </span><span class="mi">13</span><span class="p">,</span><span class="w">
+          </span><span class="s2">"accuracy"</span><span class="p">:</span><span class="w"> </span><span class="mi">100</span><span class="p">,</span><span class="w">
+          </span><span class="s2">"stage"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+          </span><span class="s2">"effects"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+            </span><span class="p">{</span><span class="w">
+              </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Heal"</span><span class="p">,</span><span class="w">
+              </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"active"</span><span class="p">,</span><span class="w">
+              </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"User heals 1/4 of max HP to front Ally."</span><span class="w">
+            </span><span class="p">}</span><span class="w">
+          </span><span class="p">]</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+      </span><span class="p">]</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="err">...</span><span class="w">
+  </span><span class="p">],</span><span class="w">
+  </span><span class="s2">"image"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://storage.googleapis.com/assets.axieinfinity.com/axies/48133/axie/axie-full-transparent.png"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"figure"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="s2">"images"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"axie.png"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://storage.googleapis.com/assets.axieinfinity.com/axies/48133/axie/axie.png"</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="s2">"atlas"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://storage.googleapis.com/assets.axieinfinity.com/axies/48133/axie/axie.atlas"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"model"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://storage.googleapis.com/assets.axieinfinity.com/axies/48133/axie/axie.json"</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="s2">"auction"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"sale"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"startingPrice"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1200000000000000000"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"endingPrice"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1150000000000000000"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"buyNowPrice"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1150000000000000000"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"suggestedPrice"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1150115740740740740"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"startingTime"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1560840680"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"duration"</span><span class="p">:</span><span class="w"> </span><span class="s2">"259200"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"timeLeft"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0"</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="s2">"stats"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="s2">"hp"</span><span class="p">:</span><span class="w"> </span><span class="mi">50</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"speed"</span><span class="p">:</span><span class="w"> </span><span class="mi">46</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"skill"</span><span class="p">:</span><span class="w"> </span><span class="mi">35</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"morale"</span><span class="p">:</span><span class="w"> </span><span class="mi">33</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="s2">"exp"</span><span class="p">:</span><span class="w"> </span><span class="mi">31</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"activityPoint"</span><span class="p">:</span><span class="w"> </span><span class="mi">198</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"pendingExp"</span><span class="p">:</span><span class="w"> </span><span class="mi">5263</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"expSubmittedAt"</span><span class="p">:</span><span class="w"> </span><span class="mi">1562401923967</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"expSignature"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0x01ae777161c73a1936da5efd8fe6cef84463d4f8da90a4baa6907e126f7776a38373b2382295bbd5d89b477cf41ef0b6a2d7e03031944de9628a627431235a54141c"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"breedCount"</span><span class="p">:</span><span class="w"> </span><span class="mi">4</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"breedable"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"level"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"unlocked"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<p>Allows to retrieve data on specific Axie.</p>
+<h3 id='endpoint'>Endpoint</h3>
+<p><code>GET /axies/&lt;ID&gt;</code></p>
+<h3 id='url-parameters'>URL Parameters</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>ID</td>
+<td>The ID of Axie to retrieve</td>
+</tr>
+</tbody></table>

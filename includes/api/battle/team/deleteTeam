@@ -1,0 +1,32 @@
+<h2 id='delete-team'>Delete Team</h2>
+<p>Allows to delete team with given ID.</p>
+<h3 id='endpoint'>Endpoint</h3>
+<p><code>POST https://api.axieinfinity.com/v1/battle/teams/delete/&lt;TEAM_ID&gt;</code></p>
+<h3 id='url-parameters'>URL Parameters</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>TEAM_ID</td>
+<td>Team id.</td>
+</tr>
+</tbody></table>
+
+<h3 id='headers-parameters'>Headers Parameters</h3>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Value</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>Authorization</td>
+<td>string: <code>Bearer &lt;TOKEN&gt;</code></td>
+<td>Token for GET and POST requests authorization.</td>
+</tr>
+</tbody></table>

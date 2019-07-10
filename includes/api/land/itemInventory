@@ -1,0 +1,78 @@
+<h2 id='item-inventory'>Item Inventory</h2>
+<blockquote>
+<p>Returns JSON structured like this:</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"totalItems"</span><span class="p">:</span><span class="w"> </span><span class="mi">1432</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"chests"</span><span class="p">:</span><span class="w"> </span><span class="p">[],</span><span class="w">
+  </span><span class="s2">"items"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"tokenId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"157"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"realTokenId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"61931390779610800350334178552581814485149"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Aquatic Plushie"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"alias"</span><span class="p">:</span><span class="w"> </span><span class="s2">"m9"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"figureUrl"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://cdn.axieinfinity.com/terrarium-items/m9.png"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"rarity"</span><span class="p">:</span><span class="w"> </span><span class="s2">"mystic"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"effects"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Increases Axie map travel speed by 10%. Increases all Aquatic Axie base stats by 20%"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"A handmade plushie designed by an ancient fisherman. Some say that the soul of a fallen Aquatic Axie lives inside."</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"mystic"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"owner"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0x9e71285e4d544b168a26f6c7f264be769d645457"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"assetType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"item"</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="err">...</span><span class="w">
+  </span><span class="p">]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<p>Allows to get data about items for given profile.</p>
+<h3 id='endpoint'>Endpoint</h3>
+<p><code>GET https://axieinfinity.com/land-api/profile/inventory/&lt;ACCOUNT_ID&gt;/</code></p>
+<h3 id='url-parameters'>URL Parameters</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>ACCOUNT_ID</td>
+<td>Account id of profile.</td>
+</tr>
+</tbody></table>
+<h3 id='query-parameters'>Query Parameters</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Default</th>
+<th>Options</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>offset</td>
+<td>0</td>
+<td>number</td>
+<td>Offset is used for pagination through pending battles.</td>
+</tr>
+<tr>
+<td>limit</td>
+<td>TO DO</td>
+<td><1, 50></td>
+<td>Limit for retrieved items.</td>
+</tr>
+</tbody></table>
+
+<h3 id='headers-parameters'>Headers Parameters</h3>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Value</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>Authorization</td>
+<td>string: <code>Bearer &lt;TOKEN&gt;</code></td>
+<td>Token for GET and POST requests authorization.</td>
+</tr>
+</tbody></table>

@@ -1,0 +1,16 @@
+<h2 id='remaining-chestes'>Remaining Chestes</h2>
+<blockquote>
+<p>Returns JSON structured like this:</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"savannah"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"forest"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"arctic"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1201"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"mystic"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<p>Allows to get data about remaining chests in land presale.</p>
+<h3 id='endpoint'>Endpoint</h3>
+<p><code>GET https://axieinfinity.com/land-api/remaining-chests</code></p>
+
+<p>&lt;%= partial &quot;includes/api/sharedParams/addressURLParams.md&quot; %&gt;</p>

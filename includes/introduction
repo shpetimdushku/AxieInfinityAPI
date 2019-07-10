@@ -1,0 +1,5 @@
+<h1 id='introduction'>Introduction</h1>
+<p>Welcome to the Axie Infinity Dev docs! You can use it to get a grasp on endpoints, which can get information on various data.</p>
+
+<p>Current API URL is (if not stated otherwise in Endpoint section):
+<code>https://axieinfinity.com/api/v2</code></p>

@@ -1,0 +1,41 @@
+<h2 id='queue-team'>Queue Team</h2>
+<blockquote>
+<p>Sample body request:</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"teamId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"e919cdbe-e18b-4509-9328-6b58b725fbf6"</span><span class="p">,</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<p>Allows to queue team for battle.</p>
+<h3 id='endpoint'>Endpoint</h3>
+<p><code>POST https://api.axieinfinity.com/v1/battle/battle/queue</code></p>
+<h3 id='body-request-parameters'>Body Request Parameters</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Value</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>teamId</td>
+<td>string</td>
+<td>Id of team to queue for battle.</td>
+</tr>
+</tbody></table>
+
+<h3 id='headers-parameters'>Headers Parameters</h3>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Value</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>Authorization</td>
+<td>string: <code>Bearer &lt;TOKEN&gt;</code></td>
+<td>Token for GET and POST requests authorization.</td>
+</tr>
+</tbody></table>

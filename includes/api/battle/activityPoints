@@ -1,0 +1,37 @@
+<h2 id='activity-points'>Activity Points</h2>
+<blockquote>
+<p>Returns JSON structured like this:</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">[</span><span class="w">
+  </span><span class="p">{</span><span class="w">
+    </span><span class="s2">"axieId"</span><span class="p">:</span><span class="w"> </span><span class="mi">12324</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"activityPoint"</span><span class="p">:</span><span class="w"> </span><span class="mi">305</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="p">{</span><span class="w">
+    </span><span class="s2">"axieId"</span><span class="p">:</span><span class="w"> </span><span class="mi">16014</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"activityPoint"</span><span class="p">:</span><span class="w"> </span><span class="mi">278</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="p">{</span><span class="w">
+    </span><span class="s2">"axieId"</span><span class="p">:</span><span class="w"> </span><span class="mi">23338</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"activityPoint"</span><span class="p">:</span><span class="w"> </span><span class="mi">304</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="err">...</span><span class="w">
+</span><span class="p">]</span><span class="w">
+</span></code></pre>
+<p>Allows to get data about activity points for given Axies. Can request multiple ID&#39;s at once.</p>
+<h3 id='endpoint'>Endpoint</h3>
+<p><code>GET https://api.axieinfinity.com/v1/battle/battle/activity-point?axieId=&lt;ID&gt;</code></p>
+<h3 id='sample-request-url'>Sample Request URL</h3>
+<p><code>https://api.axieinfinity.com/v1/battle/battle/activity-point?axieId=85&amp;axieId=4522&amp;axieId=71463</code></p>
+<h3 id='url-parameters'>URL Parameters</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>ID</td>
+<td>The ID of Axie to retrieve</td>
+</tr>
+</tbody></table>
