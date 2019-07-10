@@ -1,0 +1,47 @@
+## Item Inventory
+
+> Returns JSON structured like this:
+
+```json
+{
+  "totalItems": 1432,
+  "chests": [],
+  "items": [
+    {
+      "tokenId": "157",
+      "realTokenId": "61931390779610800350334178552581814485149",
+      "name": "Aquatic Plushie",
+      "alias": "m9",
+      "figureUrl": "https://cdn.axieinfinity.com/terrarium-items/m9.png",
+      "rarity": "mystic",
+      "effects": "Increases Axie map travel speed by 10%. Increases all Aquatic Axie base stats by 20%",
+      "description": "A handmade plushie designed by an ancient fisherman. Some say that the soul of a fallen Aquatic Axie lives inside.",
+      "type": "mystic",
+      "owner": "0x9e71285e4d544b168a26f6c7f264be769d645457",
+      "assetType": "item"
+    },
+    ...
+  ]
+}
+```
+
+Allows to get data about items for given profile.
+
+### Endpoint
+
+`GET https://axieinfinity.com/land-api/profile/inventory/<ACCOUNT_ID>/`
+
+### URL Parameters
+
+Parameter | Description
+--------- | -----------
+ACCOUNT_ID | Account id of profile.
+
+### Query Parameters
+
+Parameter | Default | Options | Description
+--------- | ------- | ------- | ----------
+offset    | 0       | number  | Offset is used for pagination through pending battles.
+limit     | TO DO   | <1, 50> | Limit for retrieved items.
+
+<%= partial "includes/api/sharedParams/authorizationHeadersParams.md" %>

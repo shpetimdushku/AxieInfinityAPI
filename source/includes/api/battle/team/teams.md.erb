@@ -1,0 +1,29 @@
+## Teams
+
+> Returns JSON structured like this:
+
+```json
+{
+  "total": 799,
+  "teams": [
+    TeamJSON,
+    TeamJSON,
+    ...
+  ]
+}
+```
+
+Allows to get data about teams from profile.
+
+### Endpoint
+
+`GET https://api.axieinfinity.com/v1/battle/teams/`
+
+### Query Parameters
+
+Parameter | Default | Options | Description
+--------- | ------- | ------- | ----------
+address   | -       | string  | Ethereum address of profile to retrieve.
+offset    | 0       | number  | Offset is used for pagination through teams.
+count     | To Do   | <1, 100>| Amount of teams to request at once.
+no_limit  | To Do      | number  | To Do

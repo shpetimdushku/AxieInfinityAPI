@@ -1,0 +1,37 @@
+## Activity Points
+
+> Returns JSON structured like this:
+
+```json
+[
+  {
+    "axieId": 12324,
+    "activityPoint": 305
+  },
+  {
+    "axieId": 16014,
+    "activityPoint": 278
+  },
+  {
+    "axieId": 23338,
+    "activityPoint": 304
+  },
+  ...
+]
+```
+
+Allows to get data about activity points for given Axies. Can request multiple ID's at once.
+
+### Endpoint
+
+`GET https://api.axieinfinity.com/v1/battle/battle/activity-point?axieId=<ID>`
+
+### Sample Request URL
+
+`https://api.axieinfinity.com/v1/battle/battle/activity-point?axieId=85&axieId=4522&axieId=71463`
+
+### URL Parameters
+
+Parameter | Description
+--------- | -----------
+ID | The ID of Axie to retrieve
