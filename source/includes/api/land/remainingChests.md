@@ -16,5 +16,3 @@ Allows to get data about remaining chests in land presale.
 ### Endpoint
 
 `GET https://axieinfinity.com/land-api/remaining-chests`
-
-<%= partial "includes/api/sharedParams/addressURLParams.md" %>
