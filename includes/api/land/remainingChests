@@ -12,5 +12,3 @@
 <p>Allows to get data about remaining chests in land presale.</p>
 <h3 id='endpoint'>Endpoint</h3>
 <p><code>GET https://axieinfinity.com/land-api/remaining-chests</code></p>
-
-<p>&lt;%= partial &quot;includes/api/sharedParams/addressURLParams.md&quot; %&gt;</p>

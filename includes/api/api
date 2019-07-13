@@ -1013,8 +1013,6 @@
 
 <p><code>GET https://axieinfinity.com/land-api/remaining-chests</code></p>
 
-<p>&lt;%= partial &quot;includes/api/sharedParams/addressURLParams.md&quot; %&gt;</p>
-
 <h2 id='land-inventory'>Land Inventory</h2>
 
 <blockquote>
