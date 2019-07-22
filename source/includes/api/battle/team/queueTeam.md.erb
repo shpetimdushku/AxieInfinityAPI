@@ -1,0 +1,23 @@
+## Queue Team
+
+> Sample body request:
+
+```json
+{
+  "teamId": "e919cdbe-e18b-4509-9328-6b58b725fbf6",
+}
+```
+
+Allows to queue team for battle.
+
+### Endpoint
+
+`POST https://api.axieinfinity.com/v1/battle/battle/queue`
+
+### Body Request Parameters
+
+Parameter | Value | Description
+--------- | ----- | -----------
+teamId    | string| Id of team to queue for battle.
+
+<%= partial "includes/api/sharedParams/authorizationHeadersParams.md" %>

@@ -1,0 +1,49 @@
+## Matches History
+
+> Returns JSON structured like this:
+
+```json
+{
+  "total": 464792,
+  "matches": [
+    {
+      "id": 5059264,
+      "winner": {
+        "address": "0xfeb6155c82eefb666cf06f93cae14232b2972887",
+        "name": "Zerg",
+        "teamName": "ABPx",
+        "axieIds": [
+          12378,
+          12385,
+          12395
+        ],
+        "deltaRating": 15
+      },
+      "loser": {
+        "address": "0x3945476e477de76d53b4833a46c806ef3d72b21e",
+        "name": "Clumsier | Flappy&Sushi | ANSTD",
+        "teamName": "Tank Breed 2",
+        "axieIds": [
+          4331,
+          6472,
+          6475
+        ],
+        "deltaRating": -12
+      },
+      "watchedBy": [],
+      "createdAt": 1562417225000
+    },
+    ...,
+  ]
+}
+```
+
+Allows to get data about matches history. Returns up to 10 matches. Can retrieve rated matches with `history` or challenge with `challenge`.
+
+### Endpoint
+
+`GET https://api.axieinfinity.com/v1/battle/history/matches`
+<br>
+`GET https://api.axieinfinity.com/v1/battle/challenge/matches`
+
+<%= partial "includes/api/sharedParams/authorizationHeadersParams.md" %>

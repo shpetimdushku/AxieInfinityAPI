@@ -1,0 +1,58 @@
+## Updatet Team
+
+
+> Sample body request:
+
+```json
+{
+  "from": "0x3945476e477de76d53b4833a46c806ef3d72b21e",
+  "name": "HWDP11",
+  "fighters": [
+    {
+      "id": 71466,
+      "position": 5,
+      "moveSet": [
+        {
+          "index": 1,
+          "part": "mouth"
+        },
+        {
+          "index": 2,
+          "part": "back"
+        },
+        {
+          "index": 3,
+          "part": "tail"
+        },
+        {
+          "index": 4,
+          "part": "horn"
+        }
+      ]
+    },
+    ...
+  ]
+}
+```
+
+Allows to update team data.
+
+### Endpoint
+
+`POST https://api.axieinfinity.com/v1/battle/teams/update/<TEAM_ID>`
+
+### URL Parameters
+
+Parameter | Description
+--------- | -----------
+TEAM_ID   | Team id.
+
+### Body Request Parameters
+
+Parameter | Value | Description
+--------- | ----- | -----------
+from      | string| ETH wallet address.
+name      | string| Name of team.
+fighters  | array | Array with moveset of Axies, position and their ID.
+
+<%= partial "includes/api/sharedParams/authorizationHeadersParams.md" %>

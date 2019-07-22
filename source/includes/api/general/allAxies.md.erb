@@ -1,0 +1,28 @@
+## All Axies
+
+> Returns JSON structured like this:
+
+```json
+{
+  "totalAxies": 2416,
+  "axies": [
+    SingleAxieJSON,
+    ...
+  ]
+}
+```
+
+Allows to retrieve data on all exisiting Axies. Returns up to 12 Axies. Can be filtered with various parameters.
+
+### Endpoint
+
+`GET /axies`
+
+To retrieve Axies from specific ETH Address:
+
+`GET /addresses/<ETH_ADDRESS>/axies`
+
+<%= partial "includes/api/sharedParams/addressURLParams.md" %>
+<%= partial "includes/api/sharedParams/axiesQueryParams.md" %>
+
+

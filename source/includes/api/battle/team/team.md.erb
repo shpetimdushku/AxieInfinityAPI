@@ -1,0 +1,50 @@
+## Team
+
+> Returns JSON structured like this:
+
+```json
+{
+  "owner": "0x3945476e477de76d53b4833a46c806ef3d72b21e",
+  "ownerName": "Clumsier | Flappy&Sushi | ANSTD",
+  "teamId": "e919cdbe-e18b-4509-9328-6b58b725fbf6",
+  "name": "HWDP11",
+  "teamMembers": [
+    {
+      "teamId": "e919cdbe-e18b-4509-9328-6b58b725fbf6",
+      "axieId": 71466,
+      "moveSet": [
+        {
+          "index": 1,
+          "part": "mouth"
+        },
+        {
+          "index": 2,
+          "part": "back"
+        },
+        {
+          "index": 3,
+          "part": "tail"
+        },
+        {
+          "index": 4,
+          "part": "horn"
+        }
+      ],
+      "position": 5
+    },
+    ...
+  ]
+}
+```
+
+Allows to get data about teams from profile.
+
+### Endpoint
+
+`GET https://api.axieinfinity.com/v1/battle/teams/<TEAM_ID>`
+
+### URL Parameters
+
+Parameter | Description
+--------- | -----------
+TEAM_ID   | Team id.

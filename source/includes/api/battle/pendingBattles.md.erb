@@ -1,0 +1,39 @@
+## Pending Battles
+
+> Returns JSON structured like this:
+
+```json
+{
+  "queue": [
+    {
+      "teamId": "cd5b884c-03ac-45fe-aacf-f7c728e99035",
+      "teamName": "Wykop14",
+      "address": "0x3945476e477de76d53b4833a46c806ef3d72b21e",
+      "axieIds": [
+        61370,
+        61415,
+        64269
+      ],
+      "createdAt": 1562778445
+    },
+    ...
+  ],
+  "total": 20,
+}
+```
+
+Allows to get data about pending battles.
+
+### Endpoint
+
+`GET https://api.axieinfinity.com/v1/battle/teams/pending/<ETH_ADDRESS>`
+
+<%= partial "includes/api/sharedParams/addressURLParams.md" %>
+
+### Query Parameters
+
+Parameter | Default | Options | Description
+--------- | ------- | ------- | ----------
+offset    | 0       | number  | Offset is used for pagination through pending battles.
+
+<%= partial "includes/api/sharedParams/authorizationHeadersParams.md" %>

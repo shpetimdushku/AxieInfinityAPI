@@ -1,0 +1,39 @@
+## Leaderboard
+
+> Returns JSON structured like this:
+
+```json
+[
+  {
+    "rank": 1,
+    "address": "0x1e3934ea7e416f4e2bc5f7d55ae9783da0061475",
+    "name": "Henri",
+    "rating": 28294,
+    "wins": 99052,
+    "draws": 0,
+    "losses": 71761
+  },
+  {
+    "rank": 2,
+    "address": "0xfbdbcf1ebe27245e3488541f19cac902e53239a4",
+    "name": "LunaciaBound (BEP)",
+    "rating": 28289,
+    "wins": 82875,
+    "draws": 0,
+    "losses": 33405
+  },
+  ...
+]
+```
+
+Allows to get leaderboard data for given ETH Address. Shows top 30 players + given address if outside of top 30.
+
+### Endpoint
+
+`GET https://api.axieinfinity.com/v1/battle/history/leaderboard`
+
+### Query Parameters
+
+Parameter | Default | Options | Description
+--------- | ------- | ------- | ----------
+address   | -       | string  | Ethereum address of profile to retrieve additional leaderboard data.
