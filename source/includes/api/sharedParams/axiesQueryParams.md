@@ -4,7 +4,9 @@ Parameter | Default | Options | Description
 --------- | ------- | ------- | ----------
 lang      | en      | -       | Parameter for language data.
 offset    | 0       | number  | Offset is used for pagination through filtered Axies, skipping amount of Axies set to offset and returning next batch of 12.
-sale      | any     | 1, 2?   | Results will include Axies which are on auction (1- sale?, 2- siring? to test)
+sale      | any     | 1       | Results will include Axies which are put on sale auction.
+siring    | any     | 1       | Results will include Axies which are put on sire auction.
+sorting   | highest_id | latest_auction, lowest_price, highest_price, lowest_id | Sorting criteria.
 breedable | false   | yes     | If set to yes, results will include Axies, which are breedable.
 stage     | any     | number <1, 4> | Stage of Axies, 1 - Egg, 2 - Larva, 3 - Petite, 4 - Adult.
 class     | any     | beast, aquatic, plant, bird, bug, reptile, hidden_1, hidden_2, hidden_3 | Results will include Axies from specified class/classes.
