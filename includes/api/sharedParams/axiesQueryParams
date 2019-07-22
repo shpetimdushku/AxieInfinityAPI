@@ -22,8 +22,20 @@
 <tr>
 <td>sale</td>
 <td>any</td>
-<td>1, 2?</td>
-<td>Results will include Axies which are on auction (1- sale?, 2- siring? to test)</td>
+<td>1</td>
+<td>Results will include Axies which are put on sale auction.</td>
+</tr>
+<tr>
+<td>siring</td>
+<td>any</td>
+<td>1</td>
+<td>Results will include Axies which are put on sire auction.</td>
+</tr>
+<tr>
+<td>sorting</td>
+<td>highest_id</td>
+<td>latest_auction, lowest_price, highest_price, lowest_id</td>
+<td>Sorting criteria.</td>
 </tr>
 <tr>
 <td>breedable</td>
