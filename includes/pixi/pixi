@@ -1,2 +1,10 @@
 <h1 id='pixi'>PIXI</h1>
-<p>Breakdown of how to use Pixi.js lib to animate Axies</p>
+<blockquote>
+<p>You need to download PIXI and include it in your HTML or insert it with some CDN link:</p>
+</blockquote>
+<pre class="highlight html tab-html"><code><span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"https://cdnjs.cloudflare.com/ajax/libs/pixi.js/5.1.0/pixi.min.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+<span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"pixi/pixi.min.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+</code></pre>
+<p>Figures provided by Axie Infinity Teams are modeled with skeletons. Hence their ability to being animated. To do so we can use <a href="https://www.pixijs.com" target="_blank">PIXI</a> library. To get hands on some examples you can hop on to them: <a href="https://github.com/kittykatattack/learningPixi" target="_blank">Learning Pixi</a></p>
+
+<p>Code snippets coming soon...</p>
