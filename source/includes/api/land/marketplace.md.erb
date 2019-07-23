@@ -1,0 +1,74 @@
+## Marketplace
+
+> Returns JSON structured like this:
+
+```json
+{
+  "total": 3143,
+  "results": [
+    {
+      "assetType": "item",
+      "alias": "p3a",
+      "sortingId": "26",
+      "name": "MakerDao Bronze",
+      "figureUrl": "https://cdn.axieinfinity.com/terrarium-items/p3a.png",
+      "type": "forest",
+      "rarity": "rare",
+      "owner": "0xb896bf8f4e47f68b112c96661fb238557c1143c4",
+      "description": "Celebrating the partnership between MakerDAO and Axie Infinity. ",
+      "effects": " Axies have a 1% greater chance to spill LUNA when traveling over land this item is placed on.",
+      "realTokenId": "67716191017266754229211546878921874079770",
+      "tokenId": 26,
+      "startingPrice": "1000000000000000000",
+      "endingPrice": "700000000000000000",
+      "startingTimestamp": "1563912023",
+      "endingTimestamp": "1563998423",
+      "duration": "86400",
+      "timeLeft": "86172",
+      "currentPrice": "999208333333333333",
+      "suggestedPrice": "1001291666666666666",
+      "listingIndex": "9487"
+    },
+    {
+      "assetType": "land",
+      "landType": "forest",
+      "owner": "0x6b2d310a7b781619be8c4194022ba9374d36521b",
+      "sortingId": -122289,
+      "realTokenId": "115792089237316195423570985008687907817880618505862963837753991820965052415999",
+      "row": -105,
+      "col": -83,
+      "startingPrice": "200000000000000000",
+      "endingPrice": "200000000000000000",
+      "startingTimestamp": "1563903955",
+      "endingTimestamp": "1563990355",
+      "duration": "86400",
+      "timeLeft": "78105",
+      "currentPrice": "200000000000000000",
+      "suggestedPrice": "200000000000000000",
+      "listingIndex": "6347"
+    },
+    ...
+  ],
+}
+```
+
+Allows to get data about items on land marketplace.
+
+### Endpoint
+
+`GET https://axieinfinity.com/marketplace-api/query-assets`
+
+<p>For bundles:</p>
+`GET https://axieinfinity.com/marketplace-api/query-assets/bundles`
+
+
+### Query Parameters
+
+Parameter | Default | Options | Description
+--------- | ------- | ------- | ----------
+offset    | 0       | number  | Offset is used for pagination through items.
+count     | -       | <1, 1000> | Count of items to retrieve.
+sorting   | recently_listed | highest_price, lowest_price, highest_price, lowest_id | Sorting criteria.
+item_name | any     | land, item, itemAlias | Category or item alias (eg - p3a is requesting MakerDao Bronze items)
+type      | any     | savannah, forest, arctic, mystic, genesis | Type of item.
+rarity    | any     | common, rare, epic, mystic | Rarity.

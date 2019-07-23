@@ -21,7 +21,3 @@ Allows to retrieve some data of all body parts.
 ### Endpoint
 
 `GET /body-parts`
-
-<aside class="success">
-  test
-</aside>

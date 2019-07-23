@@ -22,6 +22,12 @@ To retrieve Axies from specific ETH Address:
 
 `GET /addresses/<ETH_ADDRESS>/axies`
 
+### Sample Request URL
+
+`https://axieinfinity.com/api/v2/axies?mystic=true&offset=0&part=back-hermit&part=tail-koi&sale=1&sorting=lowest_price`
+
+Will return Mystic Axies with Hermit and Koi parts which are put on market. Sorted with lowest price.
+
 <%= partial "includes/api/sharedParams/addressURLParams.md" %>
 <%= partial "includes/api/sharedParams/axiesQueryParams.md" %>
 

@@ -15,3 +15,4 @@ title     | any     | origin, meo%20corp | Results will include Axies with speci
 mystic    | any     | true    | If set to true, results will include Mystic Axies.
 num_mystic| any     | number <1, 6> | Results will include Axies which have specified number of Mystic parts.
 pureness  | any     | number <1, 6> | Results will include Axies which have specified pureness of their parts.
+part      | any     | string  | Results will include Axies which have specified parts, can be multiple.

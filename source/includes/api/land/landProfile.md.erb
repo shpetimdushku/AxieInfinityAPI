@@ -1,0 +1,31 @@
+## Land Profile
+
+> Returns JSON structured like this:
+
+```json
+{
+  "success": true/false,
+  "data": {
+    "accountId": someAccountId,
+    "email": "test@test.test",
+    "activated": true/false,
+    "loomAddress": someAddresses,
+    "mainnetAddresses": [
+      {
+        "mainnet": "ethereum",
+        "mainnetAddress": someAddresses,
+        "accountId": "someAccountId"
+      }
+    ],
+    "controlledByEthWallet": true/false
+  }
+}
+```
+
+Allows to get data about land profile data.
+
+### Endpoint
+
+`GET https://axieinfinity.com/account-api/account/profile`
+
+<%= partial "includes/api/sharedParams/authorizationHeadersParams.md" %>
