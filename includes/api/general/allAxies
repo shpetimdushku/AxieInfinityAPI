@@ -17,10 +17,6 @@
 <p>To retrieve Axies from specific ETH Address:</p>
 
 <p><code>GET /addresses/&lt;ETH_ADDRESS&gt;/axies</code></p>
-<h3 id='sample-request-url'>Sample Request URL</h3>
-<p><code>https://axieinfinity.com/api/v2/axies?mystic=true&amp;offset=0&amp;part=back-hermit&amp;part=tail-koi&amp;sale=1&amp;sorting=lowest_price</code></p>
-
-<p>Will return Mystic Axies with Hermit and Koi parts which are put on market. Sorted with lowest price.</p>
 
 <h3 id='url-parameters'>URL Parameters</h3>
 
@@ -123,11 +119,5 @@
 <td>any</td>
 <td>number <1, 6></td>
 <td>Results will include Axies which have specified pureness of their parts.</td>
-</tr>
-<tr>
-<td>part</td>
-<td>any</td>
-<td>string</td>
-<td>Results will include Axies which have specified parts, can be multiple.</td>
 </tr>
 </tbody></table>

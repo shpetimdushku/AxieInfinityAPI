@@ -17,3 +17,7 @@
 <p>Allows to retrieve some data of all body parts.</p>
 <h3 id='endpoint'>Endpoint</h3>
 <p><code>GET /body-parts</code></p>
+
+<aside class="success">
+  test
+</aside>

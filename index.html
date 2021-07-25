@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <title>Axie Infinity API Reference</title>
+    <title>API Reference</title>
 
     <style>
       .highlight table td { padding: 5px; }
@@ -198,11 +198,10 @@
     </style>
     <link href="stylesheets/screen.css" rel="stylesheet" media="screen" />
     <link href="stylesheets/print.css" rel="stylesheet" media="print" />
-    <link href="stylesheets/custom.css" rel="stylesheet" media="screen" />
       <script src="javascripts/all.js"></script>
   </head>
 
-  <body class="index" data-languages="[&quot;javascript&quot;]">
+  <body class="index" data-languages="[&quot;shell&quot;,&quot;ruby&quot;,&quot;python&quot;,&quot;javascript&quot;]">
     <a href="#" id="nav-button">
       <span>
         NAV
@@ -212,6 +211,9 @@
     <div class="toc-wrapper">
       <img src="images/logo.png" class="logo" alt="Logo" />
         <div class="lang-selector">
+              <a href="#" data-language-name="shell">shell</a>
+              <a href="#" data-language-name="ruby">ruby</a>
+              <a href="#" data-language-name="python">python</a>
               <a href="#" data-language-name="javascript">javascript</a>
         </div>
         <div class="search">
@@ -223,157 +225,28 @@
             <a href="#introduction" class="toc-h1 toc-link" data-title="Introduction">Introduction</a>
           </li>
           <li>
-            <a href="#api-authentication" class="toc-h1 toc-link" data-title="API - Authentication">API - Authentication</a>
+            <a href="#authentication" class="toc-h1 toc-link" data-title="Authentication">Authentication</a>
           </li>
           <li>
-            <a href="#api-general" class="toc-h1 toc-link" data-title="API - General">API - General</a>
+            <a href="#kittens" class="toc-h1 toc-link" data-title="Kittens">Kittens</a>
               <ul class="toc-list-h2">
                   <li>
-                    <a href="#body-parts" class="toc-h2 toc-link" data-title="Body Parts">Body Parts</a>
+                    <a href="#get-all-kittens" class="toc-h2 toc-link" data-title="Get All Kittens">Get All Kittens</a>
                   </li>
                   <li>
-                    <a href="#single-axie" class="toc-h2 toc-link" data-title="Single Axie">Single Axie</a>
+                    <a href="#get-a-specific-kitten" class="toc-h2 toc-link" data-title="Get a Specific Kitten">Get a Specific Kitten</a>
                   </li>
                   <li>
-                    <a href="#all-axies" class="toc-h2 toc-link" data-title="All Axies">All Axies</a>
+                    <a href="#delete-a-specific-kitten" class="toc-h2 toc-link" data-title="Delete a Specific Kitten">Delete a Specific Kitten</a>
                   </li>
               </ul>
           </li>
           <li>
-            <a href="#api-battle" class="toc-h1 toc-link" data-title="API - Battle">API - Battle</a>
-              <ul class="toc-list-h2">
-                  <li>
-                    <a href="#check-charm" class="toc-h2 toc-link" data-title="Check Charm">Check Charm</a>
-                  </li>
-                  <li>
-                    <a href="#pending-challenges" class="toc-h2 toc-link" data-title="Pending Challenges">Pending Challenges</a>
-                  </li>
-                  <li>
-                    <a href="#practice-matches-limit" class="toc-h2 toc-link" data-title="Practice Matches Limit">Practice Matches Limit</a>
-                  </li>
-                  <li>
-                    <a href="#matches-history" class="toc-h2 toc-link" data-title="Matches History">Matches History</a>
-                  </li>
-                  <li>
-                    <a href="#activity-points" class="toc-h2 toc-link" data-title="Activity Points">Activity Points</a>
-                  </li>
-                  <li>
-                    <a href="#pending-battles" class="toc-h2 toc-link" data-title="Pending Battles">Pending Battles</a>
-                  </li>
-                  <li>
-                    <a href="#leaderboard" class="toc-h2 toc-link" data-title="Leaderboard">Leaderboard</a>
-                  </li>
-                  <li>
-                    <a href="#battle-profile" class="toc-h2 toc-link" data-title="Battle Profile">Battle Profile</a>
-                  </li>
-              </ul>
-          </li>
-          <li>
-            <a href="#api-battle-teams" class="toc-h1 toc-link" data-title="API - Battle - Teams">API - Battle - Teams</a>
-              <ul class="toc-list-h2">
-                  <li>
-                    <a href="#team" class="toc-h2 toc-link" data-title="Team">Team</a>
-                  </li>
-                  <li>
-                    <a href="#teams" class="toc-h2 toc-link" data-title="Teams">Teams</a>
-                  </li>
-                  <li>
-                    <a href="#queue-team" class="toc-h2 toc-link" data-title="Queue Team">Queue Team</a>
-                  </li>
-                  <li>
-                    <a href="#update-team" class="toc-h2 toc-link" data-title="Update Team">Update Team</a>
-                  </li>
-                  <li>
-                    <a href="#delete-team" class="toc-h2 toc-link" data-title="Delete Team">Delete Team</a>
-                  </li>
-              </ul>
-          </li>
-          <li>
-            <a href="#api-land" class="toc-h1 toc-link" data-title="API - Land">API - Land</a>
-              <ul class="toc-list-h2">
-                  <li>
-                    <a href="#remaining-chestes" class="toc-h2 toc-link" data-title="Remaining Chestes">Remaining Chestes</a>
-                  </li>
-                  <li>
-                    <a href="#land-inventory" class="toc-h2 toc-link" data-title="Land Inventory">Land Inventory</a>
-                  </li>
-                  <li>
-                    <a href="#item-inventory" class="toc-h2 toc-link" data-title="Item Inventory">Item Inventory</a>
-                  </li>
-                  <li>
-                    <a href="#land-profile" class="toc-h2 toc-link" data-title="Land Profile">Land Profile</a>
-                  </li>
-                  <li>
-                    <a href="#marketplace" class="toc-h2 toc-link" data-title="Marketplace">Marketplace</a>
-                  </li>
-              </ul>
-          </li>
-          <li>
-            <a href="#contracts-eth" class="toc-h1 toc-link" data-title="Contracts - ETH">Contracts - ETH</a>
-              <ul class="toc-list-h2">
-                  <li>
-                    <a href="#core" class="toc-h2 toc-link" data-title="Core">Core</a>
-                  </li>
-                  <li>
-                    <a href="#axie-presale" class="toc-h2 toc-link" data-title="Axie Presale">Axie Presale</a>
-                  </li>
-                  <li>
-                    <a href="#breeding" class="toc-h2 toc-link" data-title="Breeding">Breeding</a>
-                  </li>
-                  <li>
-                    <a href="#marketplace" class="toc-h2 toc-link" data-title="Marketplace">Marketplace</a>
-                  </li>
-                  <li>
-                    <a href="#marketplace-siring" class="toc-h2 toc-link" data-title="Marketplace Siring">Marketplace Siring</a>
-                  </li>
-                  <li>
-                    <a href="#aoc-axie-origin-coin" class="toc-h2 toc-link" data-title="AOC (Axie Origin Coin)">AOC (Axie Origin Coin)</a>
-                  </li>
-                  <li>
-                    <a href="#egg-coin-meo-tokens" class="toc-h2 toc-link" data-title="Egg Coin (MEO Tokens)">Egg Coin (MEO Tokens)</a>
-                  </li>
-                  <li>
-                    <a href="#egg-shop" class="toc-h2 toc-link" data-title="Egg Shop">Egg Shop</a>
-                  </li>
-                  <li>
-                    <a href="#luna-token" class="toc-h2 toc-link" data-title="Luna Token">Luna Token</a>
-                  </li>
-                  <li>
-                    <a href="#land-presale" class="toc-h2 toc-link" data-title="Land Presale">Land Presale</a>
-                  </li>
-                  <li>
-                    <a href="#bean-39-s-blessing" class="toc-h2 toc-link" data-title="Bean's Blessing">Bean's Blessing</a>
-                  </li>
-                  <li>
-                    <a href="#sync-exp" class="toc-h2 toc-link" data-title="Sync Exp">Sync Exp</a>
-                  </li>
-                  <li>
-                    <a href="#agamogenesis-auctions" class="toc-h2 toc-link" data-title="Agamogenesis Auctions">Agamogenesis Auctions</a>
-                  </li>
-              </ul>
-          </li>
-          <li>
-            <a href="#contracts-loom" class="toc-h1 toc-link" data-title="Contracts - LOOM">Contracts - LOOM</a>
-              <ul class="toc-list-h2">
-                  <li>
-                    <a href="#chest-unboxing" class="toc-h2 toc-link" data-title="Chest Unboxing">Chest Unboxing</a>
-                  </li>
-                  <li>
-                    <a href="#items" class="toc-h2 toc-link" data-title="Items">Items</a>
-                  </li>
-                  <li>
-                    <a href="#land" class="toc-h2 toc-link" data-title="Land">Land</a>
-                  </li>
-              </ul>
-          </li>
-          <li>
-            <a href="#contracts-axie-genes" class="toc-h1 toc-link" data-title="Contracts - Axie Genes">Contracts - Axie Genes</a>
-          </li>
-          <li>
-            <a href="#pixi" class="toc-h1 toc-link" data-title="PIXI">PIXI</a>
+            <a href="#errors" class="toc-h1 toc-link" data-title="Errors">Errors</a>
           </li>
       </ul>
         <ul class="toc-footer">
+            <li><a href='#'>Sign Up for a Developer Key</a></li>
             <li><a href='https://github.com/lord/slate'>Documentation Powered by Slate</a></li>
         </ul>
     </div>
@@ -381,1404 +254,249 @@
       <div class="dark-box"></div>
       <div class="content">
         <h1 id='introduction'>Introduction</h1>
+<p>Welcome to the Kittn API! You can use our API to access Kittn API endpoints, which can get information on various cats, kittens, and breeds in our database.</p>
 
-<p>Welcome to the Axie Infinity Dev docs! You can use it to get a grasp on endpoints, which can get information on various data.</p>
+<p>We have language bindings in Shell, Ruby, Python, and JavaScript! You can view code examples in the dark area to the right, and you can switch the programming language of the examples with the tabs in the top right.</p>
 
-<p>Current API URL is (if not stated otherwise in Endpoint section):
-<code>https://axieinfinity.com/api/v2</code></p>
-
-<h1 id='api-authentication'>API - Authentication</h1>
-
-<p>Currently there is no need for API Key to consume API data.</p>
-
-<h1 id='api-general'>API - General</h1>
-
-<h2 id='body-parts'>Body Parts</h2>
-
+<p>This example API documentation page was created with <a href="https://github.com/lord/slate">Slate</a>. Feel free to edit it and use it as a base for your own API&#39;s documentation.</p>
+<h1 id='authentication'>Authentication</h1>
 <blockquote>
-<p>Returns JSON structured like this:</p>
+<p>To authorize, use this code:</p>
 </blockquote>
+<pre class="highlight ruby tab-ruby"><code><span class="nb">require</span> <span class="s1">'kittn'</span>
 
-<pre class="highlight json tab-json"><code><span class="p">[</span><span class="w">
-  </span><span class="err">...</span><span class="p">,</span><span class="w">
-  </span><span class="p">{</span><span class="w">
-    </span><span class="s2">"partId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"mouth-lam-handsome"</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"class"</span><span class="p">:</span><span class="w"> </span><span class="s2">"aquatic"</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"specialGenes"</span><span class="p">:</span><span class="w"> </span><span class="s2">"mystic"</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"mouth"</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Lam Handsome"</span><span class="w">
-  </span><span class="p">},</span><span class="w">
-  </span><span class="err">...</span><span class="p">,</span><span class="w">
-</span><span class="p">]</span><span class="w">
-</span></code></pre>
+<span class="n">api</span> <span class="o">=</span> <span class="no">Kittn</span><span class="o">::</span><span class="no">APIClient</span><span class="p">.</span><span class="nf">authorize!</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">)</span>
+</code></pre><pre class="highlight python tab-python"><code><span class="kn">import</span> <span class="nn">kittn</span>
 
-<p>Allows to retrieve some data of all body parts.</p>
+<span class="n">api</span> <span class="o">=</span> <span class="n">kittn</span><span class="o">.</span><span class="n">authorize</span><span class="p">(</span><span class="s">'meowmeowmeow'</span><span class="p">)</span>
+</code></pre><pre class="highlight shell tab-shell"><code><span class="c"># With shell, you can just pass the correct header with each request</span>
+curl <span class="s2">"api_endpoint_here"</span>
+  -H <span class="s2">"Authorization: meowmeowmeow"</span>
+</code></pre><pre class="highlight javascript tab-javascript"><code><span class="kr">const</span> <span class="nx">kittn</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'kittn'</span><span class="p">);</span>
 
-<h3 id='endpoint'>Endpoint</h3>
-
-<p><code>GET /body-parts</code></p>
-
-<h2 id='single-axie'>Single Axie</h2>
-
-<blockquote>
-<p>Returns JSON structured like this:</p>
-</blockquote>
-
-<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
-  </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">48133</span><span class="p">,</span><span class="w">
-  </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Axie #48133"</span><span class="p">,</span><span class="w">
-  </span><span class="s2">"genes"</span><span class="p">:</span><span class="w"> </span><span class="s2">"31209586552778604935104065586416217693789939714895764496264522953517210607944"</span><span class="p">,</span><span class="w">
-  </span><span class="s2">"owner"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0x3945476e477de76d53b4833a46c806ef3d72b21e"</span><span class="p">,</span><span class="w">
-  </span><span class="s2">"birthDate"</span><span class="p">:</span><span class="w"> </span><span class="mi">1554629529</span><span class="p">,</span><span class="w">
-  </span><span class="s2">"sireId"</span><span class="p">:</span><span class="w"> </span><span class="mi">20426</span><span class="p">,</span><span class="w">
-  </span><span class="s2">"sireClass"</span><span class="p">:</span><span class="w"> </span><span class="s2">"aquatic"</span><span class="p">,</span><span class="w">
-  </span><span class="s2">"matronId"</span><span class="p">:</span><span class="w"> </span><span class="mi">35323</span><span class="p">,</span><span class="w">
-  </span><span class="s2">"matronClass"</span><span class="p">:</span><span class="w"> </span><span class="s2">"aquatic"</span><span class="p">,</span><span class="w">
-  </span><span class="s2">"stage"</span><span class="p">:</span><span class="w"> </span><span class="mi">4</span><span class="p">,</span><span class="w">
-  </span><span class="s2">"class"</span><span class="p">:</span><span class="w"> </span><span class="s2">"aquatic"</span><span class="p">,</span><span class="w">
-  </span><span class="s2">"title"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
-  </span><span class="s2">"parts"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-    </span><span class="err">...</span><span class="p">,</span><span class="w">
-    </span><span class="p">{</span><span class="w">
-      </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"mouth-silence-whisper"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Silence Whisper"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"class"</span><span class="p">:</span><span class="w"> </span><span class="s2">"plant"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"mouth"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"mystic"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"bionic"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"xmas"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"stage"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"moves"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-        </span><span class="p">{</span><span class="w">
-          </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"mouth-forest-spirit"</span><span class="p">,</span><span class="w">
-          </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Forest Spirit"</span><span class="p">,</span><span class="w">
-          </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"support"</span><span class="p">,</span><span class="w">
-          </span><span class="s2">"attack"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
-          </span><span class="s2">"defense"</span><span class="p">:</span><span class="w"> </span><span class="mi">13</span><span class="p">,</span><span class="w">
-          </span><span class="s2">"accuracy"</span><span class="p">:</span><span class="w"> </span><span class="mi">100</span><span class="p">,</span><span class="w">
-          </span><span class="s2">"stage"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
-          </span><span class="s2">"effects"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-            </span><span class="p">{</span><span class="w">
-              </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Heal"</span><span class="p">,</span><span class="w">
-              </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"active"</span><span class="p">,</span><span class="w">
-              </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"User heals 1/4 of max HP to front Ally."</span><span class="w">
-            </span><span class="p">}</span><span class="w">
-          </span><span class="p">]</span><span class="w">
-        </span><span class="p">}</span><span class="w">
-      </span><span class="p">]</span><span class="w">
-    </span><span class="p">},</span><span class="w">
-    </span><span class="err">...</span><span class="w">
-  </span><span class="p">],</span><span class="w">
-  </span><span class="s2">"image"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://storage.googleapis.com/assets.axieinfinity.com/axies/48133/axie/axie-full-transparent.png"</span><span class="p">,</span><span class="w">
-  </span><span class="s2">"figure"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-    </span><span class="s2">"images"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-      </span><span class="s2">"axie.png"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://storage.googleapis.com/assets.axieinfinity.com/axies/48133/axie/axie.png"</span><span class="w">
-    </span><span class="p">},</span><span class="w">
-    </span><span class="s2">"atlas"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://storage.googleapis.com/assets.axieinfinity.com/axies/48133/axie/axie.atlas"</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"model"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://storage.googleapis.com/assets.axieinfinity.com/axies/48133/axie/axie.json"</span><span class="w">
-  </span><span class="p">},</span><span class="w">
-  </span><span class="s2">"auction"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-    </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"sale"</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"startingPrice"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1200000000000000000"</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"endingPrice"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1150000000000000000"</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"buyNowPrice"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1150000000000000000"</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"suggestedPrice"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1150115740740740740"</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"startingTime"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1560840680"</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"duration"</span><span class="p">:</span><span class="w"> </span><span class="s2">"259200"</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"timeLeft"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0"</span><span class="w">
-  </span><span class="p">},</span><span class="w">
-  </span><span class="s2">"stats"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-    </span><span class="s2">"hp"</span><span class="p">:</span><span class="w"> </span><span class="mi">50</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"speed"</span><span class="p">:</span><span class="w"> </span><span class="mi">46</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"skill"</span><span class="p">:</span><span class="w"> </span><span class="mi">35</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"morale"</span><span class="p">:</span><span class="w"> </span><span class="mi">33</span><span class="w">
-  </span><span class="p">},</span><span class="w">
-  </span><span class="s2">"exp"</span><span class="p">:</span><span class="w"> </span><span class="mi">31</span><span class="p">,</span><span class="w">
-  </span><span class="s2">"activityPoint"</span><span class="p">:</span><span class="w"> </span><span class="mi">198</span><span class="p">,</span><span class="w">
-  </span><span class="s2">"pendingExp"</span><span class="p">:</span><span class="w"> </span><span class="mi">5263</span><span class="p">,</span><span class="w">
-  </span><span class="s2">"expSubmittedAt"</span><span class="p">:</span><span class="w"> </span><span class="mi">1562401923967</span><span class="p">,</span><span class="w">
-  </span><span class="s2">"expSignature"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0x01ae777161c73a1936da5efd8fe6cef84463d4f8da90a4baa6907e126f7776a38373b2382295bbd5d89b477cf41ef0b6a2d7e03031944de9628a627431235a54141c"</span><span class="p">,</span><span class="w">
-  </span><span class="s2">"breedCount"</span><span class="p">:</span><span class="w"> </span><span class="mi">4</span><span class="p">,</span><span class="w">
-  </span><span class="s2">"breedable"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
-  </span><span class="s2">"level"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
-  </span><span class="s2">"unlocked"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
-</span><span class="p">}</span><span class="w">
-</span></code></pre>
-
-<p>Allows to retrieve data on specific Axie.</p>
-
-<h3 id='endpoint'>Endpoint</h3>
-
-<p><code>GET /axies/&lt;ID&gt;</code></p>
-
-<h3 id='url-parameters'>URL Parameters</h3>
-
-<table><thead>
-<tr>
-<th>Parameter</th>
-<th>Description</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>ID</td>
-<td>The ID of Axie to retrieve</td>
-</tr>
-</tbody></table>
-
-<h2 id='all-axies'>All Axies</h2>
-
-<blockquote>
-<p>Returns JSON structured like this:</p>
-</blockquote>
-
-<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
-  </span><span class="s2">"totalAxies"</span><span class="p">:</span><span class="w"> </span><span class="mi">2416</span><span class="p">,</span><span class="w">
-  </span><span class="s2">"axies"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-    </span><span class="err">SingleAxieJSON</span><span class="p">,</span><span class="w">
-    </span><span class="err">...</span><span class="w">
-  </span><span class="p">]</span><span class="w">
-</span><span class="p">}</span><span class="w">
-</span></code></pre>
-
-<p>Allows to retrieve data on all exisiting Axies. Returns up to 12 Axies. Can be filtered with various parameters.</p>
-
-<h3 id='endpoint'>Endpoint</h3>
-
-<p><code>GET /axies</code></p>
-
-<p>To retrieve Axies from specific ETH Address:</p>
-
-<p><code>GET /addresses/&lt;ETH_ADDRESS&gt;/axies</code></p>
-
-<h3 id='sample-request-url'>Sample Request URL</h3>
-
-<p><code>https://axieinfinity.com/api/v2/axies?mystic=true&amp;offset=0&amp;part=back-hermit&amp;part=tail-koi&amp;sale=1&amp;sorting=lowest_price</code></p>
-
-<p>Will return Mystic Axies with Hermit and Koi parts which are put on market. Sorted with lowest price.</p>
-
-<h3 id='url-parameters'>URL Parameters</h3>
-
-<table><thead>
-<tr>
-<th>Parameter</th>
-<th>Description</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>ETH_ADDRESS</td>
-<td>Ethereum Address of profile to retrieve</td>
-</tr>
-</tbody></table>
-
-<h3 id='query-parameters'>Query Parameters</h3>
-
-<table><thead>
-<tr>
-<th>Parameter</th>
-<th>Default</th>
-<th>Options</th>
-<th>Description</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>lang</td>
-<td>en</td>
-<td>-</td>
-<td>Parameter for language data.</td>
-</tr>
-<tr>
-<td>offset</td>
-<td>0</td>
-<td>number</td>
-<td>Offset is used for pagination through filtered Axies, skipping amount of Axies set to offset and returning next batch of 12.</td>
-</tr>
-<tr>
-<td>sale</td>
-<td>any</td>
-<td>1</td>
-<td>Results will include Axies which are put on sale auction.</td>
-</tr>
-<tr>
-<td>siring</td>
-<td>any</td>
-<td>1</td>
-<td>Results will include Axies which are put on sire auction.</td>
-</tr>
-<tr>
-<td>sorting</td>
-<td>highest_id</td>
-<td>latest_auction, lowest_price, highest_price, lowest_id</td>
-<td>Sorting criteria.</td>
-</tr>
-<tr>
-<td>breedable</td>
-<td>false</td>
-<td>yes</td>
-<td>If set to yes, results will include Axies, which are breedable.</td>
-</tr>
-<tr>
-<td>stage</td>
-<td>any</td>
-<td>number <1, 4></td>
-<td>Stage of Axies, 1 - Egg, 2 - Larva, 3 - Petite, 4 - Adult.</td>
-</tr>
-<tr>
-<td>class</td>
-<td>any</td>
-<td>beast, aquatic, plant, bird, bug, reptile, hidden_1, hidden_2, hidden_3</td>
-<td>Results will include Axies from specified class/classes.</td>
-</tr>
-<tr>
-<td>region</td>
-<td>any</td>
-<td>japan</td>
-<td>Results will include Axies from specified region (which were birth with region option other than default).</td>
-</tr>
-<tr>
-<td>title</td>
-<td>any</td>
-<td>origin, meo%20corp</td>
-<td>Results will include Axies with specified tags.</td>
-</tr>
-<tr>
-<td>mystic</td>
-<td>any</td>
-<td>true</td>
-<td>If set to true, results will include Mystic Axies.</td>
-</tr>
-<tr>
-<td>num_mystic</td>
-<td>any</td>
-<td>number <1, 6></td>
-<td>Results will include Axies which have specified number of Mystic parts.</td>
-</tr>
-<tr>
-<td>pureness</td>
-<td>any</td>
-<td>number <1, 6></td>
-<td>Results will include Axies which have specified pureness of their parts.</td>
-</tr>
-<tr>
-<td>part</td>
-<td>any</td>
-<td>string</td>
-<td>Results will include Axies which have specified parts, can be multiple.</td>
-</tr>
-</tbody></table>
-
-<h1 id='api-battle'>API - Battle</h1>
-
-<h2 id='check-charm'>Check Charm</h2>
-
-<blockquote>
-<p>Returns JSON structured like this:</p>
-</blockquote>
-
-<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
-  </span><span class="s2">"isCharmActivated"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
-  </span><span class="s2">"activatedTil"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1562483361"</span><span class="w">
-</span><span class="p">}</span><span class="w">
-</span></code></pre>
-
-<p>Allows to get data about charm (Bean&#39;s Blessing) for given ETH Address.</p>
-
-<h3 id='endpoint'>Endpoint</h3>
-
-<p><code>GET https://api.axieinfinity.com/v1/battle/battle/check-charm/&lt;ETH_ADDRESS&gt;</code></p>
-
-<h3 id='url-parameters'>URL Parameters</h3>
-
-<table><thead>
-<tr>
-<th>Parameter</th>
-<th>Description</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>ETH_ADDRESS</td>
-<td>Ethereum Address of profile to retrieve</td>
-</tr>
-</tbody></table>
-
-<h2 id='pending-challenges'>Pending Challenges</h2>
-
-<blockquote>
-<p>Returns JSON structured like this:</p>
-</blockquote>
-
-<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
-  </span><span class="s2">"count"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="w">
-</span><span class="p">}</span><span class="w">
-</span></code></pre>
-
-<p>Allows to get count on pending challenges.</p>
-
-<h3 id='endpoint'>Endpoint</h3>
-
-<p><code>GET https://api.axieinfinity.com/v1/battle/dynamicBattle/practice-quota</code></p>
-
-<h3 id='headers-parameters'>Headers Parameters</h3>
-
-<table><thead>
-<tr>
-<th>Parameter</th>
-<th>Value</th>
-<th>Description</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>Authorization</td>
-<td>string: <code>Bearer &lt;TOKEN&gt;</code></td>
-<td>Token for GET and POST requests authorization.</td>
-</tr>
-</tbody></table>
-
-<h2 id='practice-matches-limit'>Practice Matches Limit</h2>
-
-<blockquote>
-<p>Returns JSON structured like this:</p>
-</blockquote>
-
-<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
-  </span><span class="s2">"result"</span><span class="p">:</span><span class="w"> </span><span class="mi">240</span><span class="w">
-</span><span class="p">}</span><span class="w">
-</span></code></pre>
-
-<p>Allows to get count on remaining limit of practice matches.</p>
-
-<h3 id='endpoint'>Endpoint</h3>
-
-<p><code>GET https://api.axieinfinity.com/v1/battle/dynamicBattle/practice-quota</code></p>
-
-<h3 id='headers-parameters'>Headers Parameters</h3>
-
-<table><thead>
-<tr>
-<th>Parameter</th>
-<th>Value</th>
-<th>Description</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>Authorization</td>
-<td>string: <code>Bearer &lt;TOKEN&gt;</code></td>
-<td>Token for GET and POST requests authorization.</td>
-</tr>
-</tbody></table>
-
-<h2 id='matches-history'>Matches History</h2>
-
-<blockquote>
-<p>Returns JSON structured like this:</p>
-</blockquote>
-
-<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
-  </span><span class="s2">"total"</span><span class="p">:</span><span class="w"> </span><span class="mi">464792</span><span class="p">,</span><span class="w">
-  </span><span class="s2">"matches"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-    </span><span class="p">{</span><span class="w">
-      </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">5059264</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"winner"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-        </span><span class="s2">"address"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0xfeb6155c82eefb666cf06f93cae14232b2972887"</span><span class="p">,</span><span class="w">
-        </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Zerg"</span><span class="p">,</span><span class="w">
-        </span><span class="s2">"teamName"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ABPx"</span><span class="p">,</span><span class="w">
-        </span><span class="s2">"axieIds"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-          </span><span class="mi">12378</span><span class="p">,</span><span class="w">
-          </span><span class="mi">12385</span><span class="p">,</span><span class="w">
-          </span><span class="mi">12395</span><span class="w">
-        </span><span class="p">],</span><span class="w">
-        </span><span class="s2">"deltaRating"</span><span class="p">:</span><span class="w"> </span><span class="mi">15</span><span class="w">
-      </span><span class="p">},</span><span class="w">
-      </span><span class="s2">"loser"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-        </span><span class="s2">"address"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0x3945476e477de76d53b4833a46c806ef3d72b21e"</span><span class="p">,</span><span class="w">
-        </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Clumsier | Flappy&amp;Sushi | ANSTD"</span><span class="p">,</span><span class="w">
-        </span><span class="s2">"teamName"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Tank Breed 2"</span><span class="p">,</span><span class="w">
-        </span><span class="s2">"axieIds"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-          </span><span class="mi">4331</span><span class="p">,</span><span class="w">
-          </span><span class="mi">6472</span><span class="p">,</span><span class="w">
-          </span><span class="mi">6475</span><span class="w">
-        </span><span class="p">],</span><span class="w">
-        </span><span class="s2">"deltaRating"</span><span class="p">:</span><span class="w"> </span><span class="mi">-12</span><span class="w">
-      </span><span class="p">},</span><span class="w">
-      </span><span class="s2">"watchedBy"</span><span class="p">:</span><span class="w"> </span><span class="p">[],</span><span class="w">
-      </span><span class="s2">"createdAt"</span><span class="p">:</span><span class="w"> </span><span class="mi">1562417225000</span><span class="w">
-    </span><span class="p">},</span><span class="w">
-    </span><span class="err">...</span><span class="p">,</span><span class="w">
-  </span><span class="p">]</span><span class="w">
-</span><span class="p">}</span><span class="w">
-</span></code></pre>
-
-<p>Allows to get data about matches history. Returns up to 10 matches. Can retrieve rated matches with <code>history</code> or challenge with <code>challenge</code>.</p>
-
-<h3 id='endpoint'>Endpoint</h3>
-
-<p><code>GET https://api.axieinfinity.com/v1/battle/history/matches</code>
-<br>
-<code>GET https://api.axieinfinity.com/v1/battle/challenge/matches</code></p>
-
-<h3 id='headers-parameters'>Headers Parameters</h3>
-
-<table><thead>
-<tr>
-<th>Parameter</th>
-<th>Value</th>
-<th>Description</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>Authorization</td>
-<td>string: <code>Bearer &lt;TOKEN&gt;</code></td>
-<td>Token for GET and POST requests authorization.</td>
-</tr>
-</tbody></table>
-
-<h2 id='activity-points'>Activity Points</h2>
-
-<blockquote>
-<p>Returns JSON structured like this:</p>
-</blockquote>
-
-<pre class="highlight json tab-json"><code><span class="p">[</span><span class="w">
-  </span><span class="p">{</span><span class="w">
-    </span><span class="s2">"axieId"</span><span class="p">:</span><span class="w"> </span><span class="mi">12324</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"activityPoint"</span><span class="p">:</span><span class="w"> </span><span class="mi">305</span><span class="w">
-  </span><span class="p">},</span><span class="w">
-  </span><span class="p">{</span><span class="w">
-    </span><span class="s2">"axieId"</span><span class="p">:</span><span class="w"> </span><span class="mi">16014</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"activityPoint"</span><span class="p">:</span><span class="w"> </span><span class="mi">278</span><span class="w">
-  </span><span class="p">},</span><span class="w">
-  </span><span class="p">{</span><span class="w">
-    </span><span class="s2">"axieId"</span><span class="p">:</span><span class="w"> </span><span class="mi">23338</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"activityPoint"</span><span class="p">:</span><span class="w"> </span><span class="mi">304</span><span class="w">
-  </span><span class="p">},</span><span class="w">
-  </span><span class="err">...</span><span class="w">
-</span><span class="p">]</span><span class="w">
-</span></code></pre>
-
-<p>Allows to get data about activity points for given Axies. Can request multiple ID&#39;s at once.</p>
-
-<h3 id='endpoint'>Endpoint</h3>
-
-<p><code>GET https://api.axieinfinity.com/v1/battle/battle/activity-point?axieId=&lt;ID&gt;</code></p>
-
-<h3 id='sample-request-url'>Sample Request URL</h3>
-
-<p><code>https://api.axieinfinity.com/v1/battle/battle/activity-point?axieId=85&amp;axieId=4522&amp;axieId=71463</code></p>
-
-<h3 id='url-parameters'>URL Parameters</h3>
-
-<table><thead>
-<tr>
-<th>Parameter</th>
-<th>Description</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>ID</td>
-<td>The ID of Axie to retrieve</td>
-</tr>
-</tbody></table>
-
-<h2 id='pending-battles'>Pending Battles</h2>
-
-<blockquote>
-<p>Returns JSON structured like this:</p>
-</blockquote>
-
-<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
-  </span><span class="s2">"queue"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-    </span><span class="p">{</span><span class="w">
-      </span><span class="s2">"teamId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"cd5b884c-03ac-45fe-aacf-f7c728e99035"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"teamName"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Wykop14"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"address"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0x3945476e477de76d53b4833a46c806ef3d72b21e"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"axieIds"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-        </span><span class="mi">61370</span><span class="p">,</span><span class="w">
-        </span><span class="mi">61415</span><span class="p">,</span><span class="w">
-        </span><span class="mi">64269</span><span class="w">
-      </span><span class="p">],</span><span class="w">
-      </span><span class="s2">"createdAt"</span><span class="p">:</span><span class="w"> </span><span class="mi">1562778445</span><span class="w">
-    </span><span class="p">},</span><span class="w">
-    </span><span class="err">...</span><span class="w">
-  </span><span class="p">],</span><span class="w">
-  </span><span class="s2">"total"</span><span class="p">:</span><span class="w"> </span><span class="mi">20</span><span class="p">,</span><span class="w">
-</span><span class="p">}</span><span class="w">
-</span></code></pre>
-
-<p>Allows to get data about pending battles.</p>
-
-<h3 id='endpoint'>Endpoint</h3>
-
-<p><code>GET https://api.axieinfinity.com/v1/battle/teams/pending/&lt;ETH_ADDRESS&gt;</code></p>
-
-<h3 id='url-parameters'>URL Parameters</h3>
-
-<table><thead>
-<tr>
-<th>Parameter</th>
-<th>Description</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>ETH_ADDRESS</td>
-<td>Ethereum Address of profile to retrieve</td>
-</tr>
-</tbody></table>
-
-<h3 id='query-parameters'>Query Parameters</h3>
-
-<table><thead>
-<tr>
-<th>Parameter</th>
-<th>Default</th>
-<th>Options</th>
-<th>Description</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>offset</td>
-<td>0</td>
-<td>number</td>
-<td>Offset is used for pagination through pending battles.</td>
-</tr>
-</tbody></table>
-
-<h3 id='headers-parameters'>Headers Parameters</h3>
-
-<table><thead>
-<tr>
-<th>Parameter</th>
-<th>Value</th>
-<th>Description</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>Authorization</td>
-<td>string: <code>Bearer &lt;TOKEN&gt;</code></td>
-<td>Token for GET and POST requests authorization.</td>
-</tr>
-</tbody></table>
-
-<h2 id='leaderboard'>Leaderboard</h2>
-
-<blockquote>
-<p>Returns JSON structured like this:</p>
-</blockquote>
-
-<pre class="highlight json tab-json"><code><span class="p">[</span><span class="w">
-  </span><span class="p">{</span><span class="w">
-    </span><span class="s2">"rank"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"address"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0x1e3934ea7e416f4e2bc5f7d55ae9783da0061475"</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Henri"</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"rating"</span><span class="p">:</span><span class="w"> </span><span class="mi">28294</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"wins"</span><span class="p">:</span><span class="w"> </span><span class="mi">99052</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"draws"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"losses"</span><span class="p">:</span><span class="w"> </span><span class="mi">71761</span><span class="w">
-  </span><span class="p">},</span><span class="w">
-  </span><span class="p">{</span><span class="w">
-    </span><span class="s2">"rank"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"address"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0xfbdbcf1ebe27245e3488541f19cac902e53239a4"</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"LunaciaBound (BEP)"</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"rating"</span><span class="p">:</span><span class="w"> </span><span class="mi">28289</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"wins"</span><span class="p">:</span><span class="w"> </span><span class="mi">82875</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"draws"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"losses"</span><span class="p">:</span><span class="w"> </span><span class="mi">33405</span><span class="w">
-  </span><span class="p">},</span><span class="w">
-  </span><span class="err">...</span><span class="w">
-</span><span class="p">]</span><span class="w">
-</span></code></pre>
-
-<p>Allows to get leaderboard data for given ETH Address. Shows top 30 players + given address if outside of top 30.</p>
-
-<h3 id='endpoint'>Endpoint</h3>
-
-<p><code>GET https://api.axieinfinity.com/v1/battle/history/leaderboard</code></p>
-
-<h3 id='query-parameters'>Query Parameters</h3>
-
-<table><thead>
-<tr>
-<th>Parameter</th>
-<th>Default</th>
-<th>Options</th>
-<th>Description</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>address</td>
-<td>-</td>
-<td>string</td>
-<td>Ethereum address of profile to retrieve additional leaderboard data.</td>
-</tr>
-</tbody></table>
-
-<h2 id='battle-profile'>Battle Profile</h2>
-
-<blockquote>
-<p>Returns JSON structured like this:</p>
-</blockquote>
-
-<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
-  </span><span class="s2">"address"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0x3945476e477de76d53b4833a46c806ef3d72b21e"</span><span class="p">,</span><span class="w">
-  </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Clumsier | Flappy&amp;Sushi | ANSTD"</span><span class="w">
-</span><span class="p">}</span><span class="w">
-</span></code></pre>
-
-<p>Allows to get data about Ethereum Profile.</p>
-
-<h3 id='endpoint'>Endpoint</h3>
-
-<p><code>GET https://api.axieinfinity.com/v1/battle/accounts/&lt;ETH_ADDRESS&gt;</code></p>
-
-<h3 id='url-parameters'>URL Parameters</h3>
-
-<table><thead>
-<tr>
-<th>Parameter</th>
-<th>Description</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>ETH_ADDRESS</td>
-<td>Ethereum Address of profile to retrieve</td>
-</tr>
-</tbody></table>
-
-<h1 id='api-battle-teams'>API - Battle - Teams</h1>
-
-<h2 id='team'>Team</h2>
-
-<blockquote>
-<p>Returns JSON structured like this:</p>
-</blockquote>
-
-<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
-  </span><span class="s2">"owner"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0x3945476e477de76d53b4833a46c806ef3d72b21e"</span><span class="p">,</span><span class="w">
-  </span><span class="s2">"ownerName"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Clumsier | Flappy&amp;Sushi | ANSTD"</span><span class="p">,</span><span class="w">
-  </span><span class="s2">"teamId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"e919cdbe-e18b-4509-9328-6b58b725fbf6"</span><span class="p">,</span><span class="w">
-  </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"HWDP11"</span><span class="p">,</span><span class="w">
-  </span><span class="s2">"teamMembers"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-    </span><span class="p">{</span><span class="w">
-      </span><span class="s2">"teamId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"e919cdbe-e18b-4509-9328-6b58b725fbf6"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"axieId"</span><span class="p">:</span><span class="w"> </span><span class="mi">71466</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"moveSet"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-        </span><span class="p">{</span><span class="w">
-          </span><span class="s2">"index"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
-          </span><span class="s2">"part"</span><span class="p">:</span><span class="w"> </span><span class="s2">"mouth"</span><span class="w">
-        </span><span class="p">},</span><span class="w">
-        </span><span class="p">{</span><span class="w">
-          </span><span class="s2">"index"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
-          </span><span class="s2">"part"</span><span class="p">:</span><span class="w"> </span><span class="s2">"back"</span><span class="w">
-        </span><span class="p">},</span><span class="w">
-        </span><span class="p">{</span><span class="w">
-          </span><span class="s2">"index"</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w">
-          </span><span class="s2">"part"</span><span class="p">:</span><span class="w"> </span><span class="s2">"tail"</span><span class="w">
-        </span><span class="p">},</span><span class="w">
-        </span><span class="p">{</span><span class="w">
-          </span><span class="s2">"index"</span><span class="p">:</span><span class="w"> </span><span class="mi">4</span><span class="p">,</span><span class="w">
-          </span><span class="s2">"part"</span><span class="p">:</span><span class="w"> </span><span class="s2">"horn"</span><span class="w">
-        </span><span class="p">}</span><span class="w">
-      </span><span class="p">],</span><span class="w">
-      </span><span class="s2">"position"</span><span class="p">:</span><span class="w"> </span><span class="mi">5</span><span class="w">
-    </span><span class="p">},</span><span class="w">
-    </span><span class="err">...</span><span class="w">
-  </span><span class="p">]</span><span class="w">
-</span><span class="p">}</span><span class="w">
-</span></code></pre>
-
-<p>Allows to get data about teams from profile.</p>
-
-<h3 id='endpoint'>Endpoint</h3>
-
-<p><code>GET https://api.axieinfinity.com/v1/battle/teams/&lt;TEAM_ID&gt;</code></p>
-
-<h3 id='url-parameters'>URL Parameters</h3>
-
-<table><thead>
-<tr>
-<th>Parameter</th>
-<th>Description</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>TEAM_ID</td>
-<td>Team id.</td>
-</tr>
-</tbody></table>
-
-<h2 id='teams'>Teams</h2>
-
-<blockquote>
-<p>Returns JSON structured like this:</p>
-</blockquote>
-
-<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
-  </span><span class="s2">"total"</span><span class="p">:</span><span class="w"> </span><span class="mi">799</span><span class="p">,</span><span class="w">
-  </span><span class="s2">"teams"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-    </span><span class="err">TeamJSON</span><span class="p">,</span><span class="w">
-    </span><span class="err">TeamJSON</span><span class="p">,</span><span class="w">
-    </span><span class="err">...</span><span class="w">
-  </span><span class="p">]</span><span class="w">
-</span><span class="p">}</span><span class="w">
-</span></code></pre>
-
-<p>Allows to get data about teams from profile.</p>
-
-<h3 id='endpoint'>Endpoint</h3>
-
-<p><code>GET https://api.axieinfinity.com/v1/battle/teams/</code></p>
-
-<h3 id='query-parameters'>Query Parameters</h3>
-
-<table><thead>
-<tr>
-<th>Parameter</th>
-<th>Default</th>
-<th>Options</th>
-<th>Description</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>address</td>
-<td>-</td>
-<td>string</td>
-<td>Ethereum address of profile to retrieve.</td>
-</tr>
-<tr>
-<td>offset</td>
-<td>0</td>
-<td>number</td>
-<td>Offset is used for pagination through teams.</td>
-</tr>
-<tr>
-<td>count</td>
-<td>To Do</td>
-<td><1, 100></td>
-<td>Amount of teams to request at once.</td>
-</tr>
-<tr>
-<td>no_limit</td>
-<td>To Do</td>
-<td>number</td>
-<td>To Do</td>
-</tr>
-</tbody></table>
-
-<h2 id='queue-team'>Queue Team</h2>
-
-<blockquote>
-<p>Sample body request:</p>
-</blockquote>
-
-<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
-  </span><span class="s2">"teamId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"e919cdbe-e18b-4509-9328-6b58b725fbf6"</span><span class="p">,</span><span class="w">
-</span><span class="p">}</span><span class="w">
-</span></code></pre>
-
-<p>Allows to queue team for battle.</p>
-
-<h3 id='endpoint'>Endpoint</h3>
-
-<p><code>POST https://api.axieinfinity.com/v1/battle/battle/queue</code></p>
-
-<h3 id='body-request-parameters'>Body Request Parameters</h3>
-
-<table><thead>
-<tr>
-<th>Parameter</th>
-<th>Value</th>
-<th>Description</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>teamId</td>
-<td>string</td>
-<td>Id of team to queue for battle.</td>
-</tr>
-</tbody></table>
-
-<h3 id='headers-parameters'>Headers Parameters</h3>
-
-<table><thead>
-<tr>
-<th>Parameter</th>
-<th>Value</th>
-<th>Description</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>Authorization</td>
-<td>string: <code>Bearer &lt;TOKEN&gt;</code></td>
-<td>Token for GET and POST requests authorization.</td>
-</tr>
-</tbody></table>
-
-<h2 id='update-team'>Update Team</h2>
-
-<blockquote>
-<p>Sample body request:</p>
-</blockquote>
-
-<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
-  </span><span class="s2">"from"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0x3945476e477de76d53b4833a46c806ef3d72b21e"</span><span class="p">,</span><span class="w">
-  </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"HWDP11"</span><span class="p">,</span><span class="w">
-  </span><span class="s2">"fighters"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-    </span><span class="p">{</span><span class="w">
-      </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">71466</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"position"</span><span class="p">:</span><span class="w"> </span><span class="mi">5</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"moveSet"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-        </span><span class="p">{</span><span class="w">
-          </span><span class="s2">"index"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
-          </span><span class="s2">"part"</span><span class="p">:</span><span class="w"> </span><span class="s2">"mouth"</span><span class="w">
-        </span><span class="p">},</span><span class="w">
-        </span><span class="p">{</span><span class="w">
-          </span><span class="s2">"index"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
-          </span><span class="s2">"part"</span><span class="p">:</span><span class="w"> </span><span class="s2">"back"</span><span class="w">
-        </span><span class="p">},</span><span class="w">
-        </span><span class="p">{</span><span class="w">
-          </span><span class="s2">"index"</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w">
-          </span><span class="s2">"part"</span><span class="p">:</span><span class="w"> </span><span class="s2">"tail"</span><span class="w">
-        </span><span class="p">},</span><span class="w">
-        </span><span class="p">{</span><span class="w">
-          </span><span class="s2">"index"</span><span class="p">:</span><span class="w"> </span><span class="mi">4</span><span class="p">,</span><span class="w">
-          </span><span class="s2">"part"</span><span class="p">:</span><span class="w"> </span><span class="s2">"horn"</span><span class="w">
-        </span><span class="p">}</span><span class="w">
-      </span><span class="p">]</span><span class="w">
-    </span><span class="p">},</span><span class="w">
-    </span><span class="err">...</span><span class="w">
-  </span><span class="p">]</span><span class="w">
-</span><span class="p">}</span><span class="w">
-</span></code></pre>
-
-<p>Allows to update team data.</p>
-
-<h3 id='endpoint'>Endpoint</h3>
-
-<p><code>POST https://api.axieinfinity.com/v1/battle/teams/update/&lt;TEAM_ID&gt;</code></p>
-
-<h3 id='url-parameters'>URL Parameters</h3>
-
-<table><thead>
-<tr>
-<th>Parameter</th>
-<th>Description</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>TEAM_ID</td>
-<td>Team id.</td>
-</tr>
-</tbody></table>
-
-<h3 id='body-request-parameters'>Body Request Parameters</h3>
-
-<table><thead>
-<tr>
-<th>Parameter</th>
-<th>Value</th>
-<th>Description</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>from</td>
-<td>string</td>
-<td>ETH wallet address.</td>
-</tr>
-<tr>
-<td>name</td>
-<td>string</td>
-<td>Name of team.</td>
-</tr>
-<tr>
-<td>fighters</td>
-<td>array</td>
-<td>Array with moveset of Axies, position and their ID.</td>
-</tr>
-</tbody></table>
-
-<h3 id='headers-parameters'>Headers Parameters</h3>
-
-<table><thead>
-<tr>
-<th>Parameter</th>
-<th>Value</th>
-<th>Description</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>Authorization</td>
-<td>string: <code>Bearer &lt;TOKEN&gt;</code></td>
-<td>Token for GET and POST requests authorization.</td>
-</tr>
-</tbody></table>
-
-<h2 id='delete-team'>Delete Team</h2>
-
-<p>Allows to delete team with given ID.</p>
-
-<h3 id='endpoint'>Endpoint</h3>
-
-<p><code>POST https://api.axieinfinity.com/v1/battle/teams/delete/&lt;TEAM_ID&gt;</code></p>
-
-<h3 id='url-parameters'>URL Parameters</h3>
-
-<table><thead>
-<tr>
-<th>Parameter</th>
-<th>Description</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>TEAM_ID</td>
-<td>Team id.</td>
-</tr>
-</tbody></table>
-
-<h3 id='headers-parameters'>Headers Parameters</h3>
-
-<table><thead>
-<tr>
-<th>Parameter</th>
-<th>Value</th>
-<th>Description</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>Authorization</td>
-<td>string: <code>Bearer &lt;TOKEN&gt;</code></td>
-<td>Token for GET and POST requests authorization.</td>
-</tr>
-</tbody></table>
-
-<h1 id='api-land'>API - Land</h1>
-
-<h2 id='remaining-chestes'>Remaining Chestes</h2>
-
-<blockquote>
-<p>Returns JSON structured like this:</p>
-</blockquote>
-
-<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
-  </span><span class="s2">"savannah"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0"</span><span class="p">,</span><span class="w">
-  </span><span class="s2">"forest"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0"</span><span class="p">,</span><span class="w">
-  </span><span class="s2">"arctic"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1201"</span><span class="p">,</span><span class="w">
-  </span><span class="s2">"mystic"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0"</span><span class="w">
-</span><span class="p">}</span><span class="w">
-</span></code></pre>
-
-<p>Allows to get data about remaining chests in land presale.</p>
-
-<h3 id='endpoint'>Endpoint</h3>
-
-<p><code>GET https://axieinfinity.com/land-api/remaining-chests</code></p>
-
-<h2 id='land-inventory'>Land Inventory</h2>
-
-<blockquote>
-<p>Returns JSON structured like this:</p>
-</blockquote>
-
-<pre class="highlight json tab-json"><code><span class="p">[</span><span class="w">
-  </span><span class="p">{</span><span class="w">
-    </span><span class="s2">"landType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Mystic"</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"realTokenId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"115792089237316195417293883273301227098621819149298236135741091575610554187775"</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"row"</span><span class="p">:</span><span class="w"> </span><span class="mi">26</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"col"</span><span class="p">:</span><span class="w"> </span><span class="mi">-62</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"owner"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0x9e71285e4d544b168a26f6c7f264be769d645457"</span><span class="w">
-  </span><span class="p">},</span><span class="w">
-  </span><span class="p">{</span><span class="w">
-    </span><span class="s2">"landType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Arctic"</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"realTokenId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"115792089237316195417293883273301227098962101516219174598890871533789260021759"</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"row"</span><span class="p">:</span><span class="w"> </span><span class="mi">27</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"col"</span><span class="p">:</span><span class="w"> </span><span class="mi">-79</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"owner"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0x9e71285e4d544b168a26f6c7f264be769d645457"</span><span class="w">
-  </span><span class="p">},</span><span class="w">
-  </span><span class="err">...</span><span class="w">
-</span><span class="p">]</span><span class="w">
-</span></code></pre>
-
-<p>Allows to get data about land for given profile.</p>
-
-<h3 id='endpoint'>Endpoint</h3>
-
-<p><code>GET https://axieinfinity.com/land-api/profile/land/&lt;ACCOUNT_ID&gt;</code></p>
-
-<h3 id='url-parameters'>URL Parameters</h3>
-
-<table><thead>
-<tr>
-<th>Parameter</th>
-<th>Description</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>ACCOUNT_ID</td>
-<td>Account id of profile.</td>
-</tr>
-</tbody></table>
-
-<h3 id='headers-parameters'>Headers Parameters</h3>
-
-<table><thead>
-<tr>
-<th>Parameter</th>
-<th>Value</th>
-<th>Description</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>Authorization</td>
-<td>string: <code>Bearer &lt;TOKEN&gt;</code></td>
-<td>Token for GET and POST requests authorization.</td>
-</tr>
-</tbody></table>
-
-<h2 id='item-inventory'>Item Inventory</h2>
-
-<blockquote>
-<p>Returns JSON structured like this:</p>
-</blockquote>
-
-<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
-  </span><span class="s2">"totalItems"</span><span class="p">:</span><span class="w"> </span><span class="mi">1432</span><span class="p">,</span><span class="w">
-  </span><span class="s2">"chests"</span><span class="p">:</span><span class="w"> </span><span class="p">[],</span><span class="w">
-  </span><span class="s2">"items"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-    </span><span class="p">{</span><span class="w">
-      </span><span class="s2">"tokenId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"157"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"realTokenId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"61931390779610800350334178552581814485149"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Aquatic Plushie"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"alias"</span><span class="p">:</span><span class="w"> </span><span class="s2">"m9"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"figureUrl"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://cdn.axieinfinity.com/terrarium-items/m9.png"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"rarity"</span><span class="p">:</span><span class="w"> </span><span class="s2">"mystic"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"effects"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Increases Axie map travel speed by 10%. Increases all Aquatic Axie base stats by 20%"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"A handmade plushie designed by an ancient fisherman. Some say that the soul of a fallen Aquatic Axie lives inside."</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"mystic"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"owner"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0x9e71285e4d544b168a26f6c7f264be769d645457"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"assetType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"item"</span><span class="w">
-    </span><span class="p">},</span><span class="w">
-    </span><span class="err">...</span><span class="w">
-  </span><span class="p">]</span><span class="w">
-</span><span class="p">}</span><span class="w">
-</span></code></pre>
-
-<p>Allows to get data about items for given profile.</p>
-
-<h3 id='endpoint'>Endpoint</h3>
-
-<p><code>GET https://axieinfinity.com/land-api/profile/inventory/&lt;ACCOUNT_ID&gt;/</code></p>
-
-<h3 id='url-parameters'>URL Parameters</h3>
-
-<table><thead>
-<tr>
-<th>Parameter</th>
-<th>Description</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>ACCOUNT_ID</td>
-<td>Account id of profile.</td>
-</tr>
-</tbody></table>
-
-<h3 id='query-parameters'>Query Parameters</h3>
-
-<table><thead>
-<tr>
-<th>Parameter</th>
-<th>Default</th>
-<th>Options</th>
-<th>Description</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>offset</td>
-<td>0</td>
-<td>number</td>
-<td>Offset is used for pagination through pending battles.</td>
-</tr>
-<tr>
-<td>limit</td>
-<td>-</td>
-<td><1, 50></td>
-<td>Limit for retrieved items.</td>
-</tr>
-</tbody></table>
-
-<h3 id='headers-parameters'>Headers Parameters</h3>
-
-<table><thead>
-<tr>
-<th>Parameter</th>
-<th>Value</th>
-<th>Description</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>Authorization</td>
-<td>string: <code>Bearer &lt;TOKEN&gt;</code></td>
-<td>Token for GET and POST requests authorization.</td>
-</tr>
-</tbody></table>
-
-<h2 id='land-profile'>Land Profile</h2>
-
-<blockquote>
-<p>Returns JSON structured like this:</p>
-</blockquote>
-
-<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
-  </span><span class="s2">"success"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="err">/</span><span class="kc">false</span><span class="p">,</span><span class="w">
-  </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-    </span><span class="s2">"accountId"</span><span class="p">:</span><span class="w"> </span><span class="err">someAccountId</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"email"</span><span class="p">:</span><span class="w"> </span><span class="s2">"test@test.test"</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"activated"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="err">/</span><span class="kc">false</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"loomAddress"</span><span class="p">:</span><span class="w"> </span><span class="err">someAddresses</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"mainnetAddresses"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-      </span><span class="p">{</span><span class="w">
-        </span><span class="s2">"mainnet"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ethereum"</span><span class="p">,</span><span class="w">
-        </span><span class="s2">"mainnetAddress"</span><span class="p">:</span><span class="w"> </span><span class="err">someAddresses</span><span class="p">,</span><span class="w">
-        </span><span class="s2">"accountId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"someAccountId"</span><span class="w">
-      </span><span class="p">}</span><span class="w">
-    </span><span class="p">],</span><span class="w">
-    </span><span class="s2">"controlledByEthWallet"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="err">/</span><span class="kc">false</span><span class="w">
-  </span><span class="p">}</span><span class="w">
-</span><span class="p">}</span><span class="w">
-</span></code></pre>
-
-<p>Allows to get data about land profile data.</p>
-
-<h3 id='endpoint'>Endpoint</h3>
-
-<p><code>GET https://axieinfinity.com/account-api/account/profile</code></p>
-
-<h3 id='headers-parameters'>Headers Parameters</h3>
-
-<table><thead>
-<tr>
-<th>Parameter</th>
-<th>Value</th>
-<th>Description</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>Authorization</td>
-<td>string: <code>Bearer &lt;TOKEN&gt;</code></td>
-<td>Token for GET and POST requests authorization.</td>
-</tr>
-</tbody></table>
-
-<h2 id='marketplace'>Marketplace</h2>
-
-<blockquote>
-<p>Returns JSON structured like this:</p>
-</blockquote>
-
-<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
-  </span><span class="s2">"total"</span><span class="p">:</span><span class="w"> </span><span class="mi">3143</span><span class="p">,</span><span class="w">
-  </span><span class="s2">"results"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-    </span><span class="p">{</span><span class="w">
-      </span><span class="s2">"assetType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"item"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"alias"</span><span class="p">:</span><span class="w"> </span><span class="s2">"p3a"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"sortingId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"26"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"MakerDao Bronze"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"figureUrl"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://cdn.axieinfinity.com/terrarium-items/p3a.png"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"forest"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"rarity"</span><span class="p">:</span><span class="w"> </span><span class="s2">"rare"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"owner"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0xb896bf8f4e47f68b112c96661fb238557c1143c4"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Celebrating the partnership between MakerDAO and Axie Infinity. "</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"effects"</span><span class="p">:</span><span class="w"> </span><span class="s2">" Axies have a 1% greater chance to spill LUNA when traveling over land this item is placed on."</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"realTokenId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"67716191017266754229211546878921874079770"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"tokenId"</span><span class="p">:</span><span class="w"> </span><span class="mi">26</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"startingPrice"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1000000000000000000"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"endingPrice"</span><span class="p">:</span><span class="w"> </span><span class="s2">"700000000000000000"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"startingTimestamp"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1563912023"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"endingTimestamp"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1563998423"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"duration"</span><span class="p">:</span><span class="w"> </span><span class="s2">"86400"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"timeLeft"</span><span class="p">:</span><span class="w"> </span><span class="s2">"86172"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"currentPrice"</span><span class="p">:</span><span class="w"> </span><span class="s2">"999208333333333333"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"suggestedPrice"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1001291666666666666"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"listingIndex"</span><span class="p">:</span><span class="w"> </span><span class="s2">"9487"</span><span class="w">
-    </span><span class="p">},</span><span class="w">
-    </span><span class="p">{</span><span class="w">
-      </span><span class="s2">"assetType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"land"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"landType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"forest"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"owner"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0x6b2d310a7b781619be8c4194022ba9374d36521b"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"sortingId"</span><span class="p">:</span><span class="w"> </span><span class="mi">-122289</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"realTokenId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"115792089237316195423570985008687907817880618505862963837753991820965052415999"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"row"</span><span class="p">:</span><span class="w"> </span><span class="mi">-105</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"col"</span><span class="p">:</span><span class="w"> </span><span class="mi">-83</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"startingPrice"</span><span class="p">:</span><span class="w"> </span><span class="s2">"200000000000000000"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"endingPrice"</span><span class="p">:</span><span class="w"> </span><span class="s2">"200000000000000000"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"startingTimestamp"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1563903955"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"endingTimestamp"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1563990355"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"duration"</span><span class="p">:</span><span class="w"> </span><span class="s2">"86400"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"timeLeft"</span><span class="p">:</span><span class="w"> </span><span class="s2">"78105"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"currentPrice"</span><span class="p">:</span><span class="w"> </span><span class="s2">"200000000000000000"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"suggestedPrice"</span><span class="p">:</span><span class="w"> </span><span class="s2">"200000000000000000"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"listingIndex"</span><span class="p">:</span><span class="w"> </span><span class="s2">"6347"</span><span class="w">
-    </span><span class="p">},</span><span class="w">
-    </span><span class="err">...</span><span class="w">
-  </span><span class="p">],</span><span class="w">
-</span><span class="p">}</span><span class="w">
-</span></code></pre>
-
-<p>Allows to get data about items on land marketplace.</p>
-
-<h3 id='endpoint'>Endpoint</h3>
-
-<p><code>GET https://axieinfinity.com/marketplace-api/query-assets</code></p>
-
-<p>For bundles:</p>
-
-<p><code>GET https://axieinfinity.com/marketplace-api/query-assets/bundles</code></p>
-
-<h3 id='query-parameters'>Query Parameters</h3>
-
-<table><thead>
-<tr>
-<th>Parameter</th>
-<th>Default</th>
-<th>Options</th>
-<th>Description</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>offset</td>
-<td>0</td>
-<td>number</td>
-<td>Offset is used for pagination through items.</td>
-</tr>
-<tr>
-<td>count</td>
-<td>-</td>
-<td><1, 1000></td>
-<td>Count of items to retrieve.</td>
-</tr>
-<tr>
-<td>sorting</td>
-<td>recently_listed</td>
-<td>highest_price, lowest_price, highest_price, lowest_id</td>
-<td>Sorting criteria.</td>
-</tr>
-<tr>
-<td>item_name</td>
-<td>any</td>
-<td>land, item, itemAlias</td>
-<td>Category or item alias (eg - p3a is requesting MakerDao Bronze items)</td>
-</tr>
-<tr>
-<td>type</td>
-<td>any</td>
-<td>savannah, forest, arctic, mystic, genesis</td>
-<td>Type of item.</td>
-</tr>
-<tr>
-<td>rarity</td>
-<td>any</td>
-<td>common, rare, epic, mystic</td>
-<td>Rarity.</td>
-</tr>
-</tbody></table>
-
-<h1 id='contracts-eth'>Contracts - ETH</h1>
-
-<h3 id='core'>Core</h3>
-
-<p><a href="https://etherscan.io/address/0xf5b0a3efb8e8e4c201e2a935f110eaaf3ffecb8d" target="_blank">0xf5b0a3efb8e8e4c201e2a935f110eaaf3ffecb8d</a></p>
-
-<h3 id='axie-presale'>Axie Presale</h3>
-
-<p><a href="https://etherscan.io/address/0xb28a3dd24036151c819c6d401f7a222d9aa3671b" target="_blank">0xb28a3dd24036151c819c6d401f7a222d9aa3671b</a></p>
-
-<p>TODOOOOO presale extendeed address
-<a href="https://etherscan.io/address/0xf4985070ce32b6b1994329df787d1acc9a2dd9e2" target="_blank">0xf4985070ce32b6b1994329df787d1acc9a2dd9e2</a></p>
-
-<h3 id='breeding'>Breeding</h3>
-
-<p><a href="https://etherscan.io/address/0x425372c0ac9d559a186a08a3854e0ddea1a00d5c" target="_blank">0x425372c0ac9d559a186a08a3854e0ddea1a00d5c</a></p>
-
-<h3 id='marketplace'>Marketplace</h3>
-
-<p><a href="https://etherscan.io/address/0xf4985070ce32b6b1994329df787d1acc9a2dd9e2" target="_blank">0xf4985070ce32b6b1994329df787d1acc9a2dd9e2</a></p>
-
-<h3 id='marketplace-siring'>Marketplace Siring</h3>
-
-<p><a href="https://etherscan.io/address/0x60ce035dc589c3fd185b224a7ca03c598948973b" target="_blank">0x60ce035dc589c3fd185b224a7ca03c598948973b</a></p>
-
-<h3 id='aoc-axie-origin-coin'>AOC (Axie Origin Coin)</h3>
-
-<p><a href="https://etherscan.io/address/0x73d7b530d181ef957525c6fbe2ab8f28bf4f81cf" target="_blank">0x73d7b530d181ef957525c6fbe2ab8f28bf4f81cf</a></p>
-
-<h3 id='egg-coin-meo-tokens'>Egg Coin (MEO Tokens)</h3>
-
-<p><a href="https://etherscan.io/address/0x0c7cf86188632e16af00415214155950684466a8" target="_blank">0x0c7cf86188632e16af00415214155950684466a8</a></p>
-
-<h3 id='egg-shop'>Egg Shop</h3>
-
-<p><a href="https://etherscan.io/address/0xeba02cfc36c01acbe10f6bcb909b76749e54956a" target="_blank">0xeba02cfc36c01acbe10f6bcb909b76749e54956a</a></p>
-
-<h3 id='luna-token'>Luna Token</h3>
-
-<p><a href="https://etherscan.io/address/0x92bF969865c80EDa082FD5D8b4E28da4d58e1C3a" target="_blank">0x92bF969865c80EDa082FD5D8b4E28da4d58e1C3a</a></p>
-
-<h3 id='land-presale'>Land Presale</h3>
-
-<p><a href="https://etherscan.io/address/0x7a11462A2adAed5571b91e34a127E4cbF51b152c" target="_blank">0x7a11462A2adAed5571b91e34a127E4cbF51b152c</a>
-<a href="https://etherscan.io/address/0x2299A91Cc0BFFd8c7F71349dA8Ab03527B79724F" target="_blank">0x2299A91Cc0BFFd8c7F71349dA8Ab03527B79724F</a></p>
-
-<h3 id='bean-39-s-blessing'>Bean&#39;s Blessing</h3>
-
-<p><a href="https://etherscan.io/address/0x71FfC95Ca3BcEbF26024f689F40006182916167f" target="_blank">0x71FfC95Ca3BcEbF26024f689F40006182916167f</a></p>
-
-<h3 id='sync-exp'>Sync Exp</h3>
-
-<p>TO DO: Address check + ABI paste
-<a href="https://etherscan.io/address/0x71FfC95Ca3BcEbF26024f689F40006182916167f" target="_blank">0x71FfC95Ca3BcEbF26024f689F40006182916167f</a></p>
-
-<h3 id='agamogenesis-auctions'>Agamogenesis Auctions</h3>
-
-<p><a href="https://etherscan.io/address/0x436fb447a25d90965b6311e931682f7279d03226" target="_blank">0x436fb447a25d90965b6311e931682f7279d03226</a></p>
-
-<h1 id='contracts-loom'>Contracts - LOOM</h1>
-
-<h3 id='chest-unboxing'>Chest Unboxing</h3>
-
-<p>0x6491fefedb00c59d36c2f30a65325bbd1046cece</p>
-
-<h3 id='items'>Items</h3>
-
-<p>0x485c9f05ac8c3c957ca43518ec346ebff6d47b84</p>
-
-<h3 id='land'>Land</h3>
-
-<p>0xe228f42ccabe5f38c492b50906ae03d950546a3f</p>
-
-<h1 id='contracts-axie-genes'>Contracts - Axie Genes</h1>
-
-<p>Articles for breaking down of genes by <a href="https://freakitties.github.io/" target="_blank">freak</a>:</p>
-
-<p><a href="https://medium.com/@freakitties/sequencing-the-axie-genome-572f147c45d9" target="_blank">Sequencing the Axie Genome</a></p>
-
-<p><a href="https://medium.com/@freakitties/more-on-the-axie-genome-60295f83a6a5" target="_blank">More on the Axie Genome</a></p>
-
-<p>Code snippets coming soon...</p>
-
-<h1 id='pixi'>PIXI</h1>
-
-<blockquote>
-<p>You need to download PIXI and include it in your HTML or insert it with some CDN link:</p>
-</blockquote>
-
-<pre class="highlight html tab-html"><code><span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"https://cdnjs.cloudflare.com/ajax/libs/pixi.js/5.1.0/pixi.min.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
-<span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"pixi/pixi.min.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+<span class="kd">let</span> <span class="nx">api</span> <span class="o">=</span> <span class="nx">kittn</span><span class="p">.</span><span class="nx">authorize</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">);</span>
 </code></pre>
+<blockquote>
+<p>Make sure to replace <code>meowmeowmeow</code> with your API key.</p>
+</blockquote>
 
-<p>Figures provided by Axie Infinity Teams are modeled with skeletons. Hence their ability to being animated. To do so we can use <a href="https://www.pixijs.com" target="_blank">PIXI</a> library. To get hands on some examples you can hop on to them: <a href="https://github.com/kittykatattack/learningPixi" target="_blank">Learning Pixi</a></p>
+<p>Kittn uses API keys to allow access to the API. You can register a new Kittn API key at our <a href="http://example.com/developers">developer portal</a>.</p>
 
-<p>Code snippets coming soon...</p>
+<p>Kittn expects for the API key to be included in all API requests to the server in a header that looks like the following:</p>
+
+<p><code>Authorization: meowmeowmeow</code></p>
+
+<aside class="notice">
+You must replace <code>meowmeowmeow</code> with your personal API key.
+</aside>
+<h1 id='kittens'>Kittens</h1><h2 id='get-all-kittens'>Get All Kittens</h2><pre class="highlight ruby tab-ruby"><code><span class="nb">require</span> <span class="s1">'kittn'</span>
+
+<span class="n">api</span> <span class="o">=</span> <span class="no">Kittn</span><span class="o">::</span><span class="no">APIClient</span><span class="p">.</span><span class="nf">authorize!</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">)</span>
+<span class="n">api</span><span class="p">.</span><span class="nf">kittens</span><span class="p">.</span><span class="nf">get</span>
+</code></pre><pre class="highlight python tab-python"><code><span class="kn">import</span> <span class="nn">kittn</span>
+
+<span class="n">api</span> <span class="o">=</span> <span class="n">kittn</span><span class="o">.</span><span class="n">authorize</span><span class="p">(</span><span class="s">'meowmeowmeow'</span><span class="p">)</span>
+<span class="n">api</span><span class="o">.</span><span class="n">kittens</span><span class="o">.</span><span class="n">get</span><span class="p">()</span>
+</code></pre><pre class="highlight shell tab-shell"><code>curl <span class="s2">"http://example.com/api/kittens"</span>
+  -H <span class="s2">"Authorization: meowmeowmeow"</span>
+</code></pre><pre class="highlight javascript tab-javascript"><code><span class="kr">const</span> <span class="nx">kittn</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'kittn'</span><span class="p">);</span>
+
+<span class="kd">let</span> <span class="nx">api</span> <span class="o">=</span> <span class="nx">kittn</span><span class="p">.</span><span class="nx">authorize</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">);</span>
+<span class="kd">let</span> <span class="nx">kittens</span> <span class="o">=</span> <span class="nx">api</span><span class="p">.</span><span class="nx">kittens</span><span class="p">.</span><span class="nx">get</span><span class="p">();</span>
+</code></pre>
+<blockquote>
+<p>The above command returns JSON structured like this:</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">[</span><span class="w">
+  </span><span class="p">{</span><span class="w">
+    </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Fluffums"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"breed"</span><span class="p">:</span><span class="w"> </span><span class="s2">"calico"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"fluffiness"</span><span class="p">:</span><span class="w"> </span><span class="mi">6</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"cuteness"</span><span class="p">:</span><span class="w"> </span><span class="mi">7</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="p">{</span><span class="w">
+    </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Max"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"breed"</span><span class="p">:</span><span class="w"> </span><span class="s2">"unknown"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"fluffiness"</span><span class="p">:</span><span class="w"> </span><span class="mi">5</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"cuteness"</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">]</span><span class="w">
+</span></code></pre>
+<p>This endpoint retrieves all kittens.</p>
+<h3 id='http-request'>HTTP Request</h3>
+<p><code>GET http://example.com/api/kittens</code></p>
+<h3 id='query-parameters'>Query Parameters</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Default</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>include_cats</td>
+<td>false</td>
+<td>If set to true, the result will also include cats.</td>
+</tr>
+<tr>
+<td>available</td>
+<td>true</td>
+<td>If set to false, the result will include kittens that have already been adopted.</td>
+</tr>
+</tbody></table>
+
+<aside class="success">
+Remember — a happy kitten is an authenticated kitten!
+</aside>
+<h2 id='get-a-specific-kitten'>Get a Specific Kitten</h2><pre class="highlight ruby tab-ruby"><code><span class="nb">require</span> <span class="s1">'kittn'</span>
+
+<span class="n">api</span> <span class="o">=</span> <span class="no">Kittn</span><span class="o">::</span><span class="no">APIClient</span><span class="p">.</span><span class="nf">authorize!</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">)</span>
+<span class="n">api</span><span class="p">.</span><span class="nf">kittens</span><span class="p">.</span><span class="nf">get</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+</code></pre><pre class="highlight python tab-python"><code><span class="kn">import</span> <span class="nn">kittn</span>
+
+<span class="n">api</span> <span class="o">=</span> <span class="n">kittn</span><span class="o">.</span><span class="n">authorize</span><span class="p">(</span><span class="s">'meowmeowmeow'</span><span class="p">)</span>
+<span class="n">api</span><span class="o">.</span><span class="n">kittens</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+</code></pre><pre class="highlight shell tab-shell"><code>curl <span class="s2">"http://example.com/api/kittens/2"</span>
+  -H <span class="s2">"Authorization: meowmeowmeow"</span>
+</code></pre><pre class="highlight javascript tab-javascript"><code><span class="kr">const</span> <span class="nx">kittn</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'kittn'</span><span class="p">);</span>
+
+<span class="kd">let</span> <span class="nx">api</span> <span class="o">=</span> <span class="nx">kittn</span><span class="p">.</span><span class="nx">authorize</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">);</span>
+<span class="kd">let</span> <span class="nx">max</span> <span class="o">=</span> <span class="nx">api</span><span class="p">.</span><span class="nx">kittens</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="mi">2</span><span class="p">);</span>
+</code></pre>
+<blockquote>
+<p>The above command returns JSON structured like this:</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Max"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"breed"</span><span class="p">:</span><span class="w"> </span><span class="s2">"unknown"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"fluffiness"</span><span class="p">:</span><span class="w"> </span><span class="mi">5</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"cuteness"</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<p>This endpoint retrieves a specific kitten.</p>
+
+<aside class="warning">Inside HTML code blocks like this one, you can't use Markdown, so use <code>&lt;code&gt;</code> blocks to denote code.</aside>
+<h3 id='http-request-2'>HTTP Request</h3>
+<p><code>GET http://example.com/kittens/&lt;ID&gt;</code></p>
+<h3 id='url-parameters'>URL Parameters</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>ID</td>
+<td>The ID of the kitten to retrieve</td>
+</tr>
+</tbody></table>
+<h2 id='delete-a-specific-kitten'>Delete a Specific Kitten</h2><pre class="highlight ruby tab-ruby"><code><span class="nb">require</span> <span class="s1">'kittn'</span>
+
+<span class="n">api</span> <span class="o">=</span> <span class="no">Kittn</span><span class="o">::</span><span class="no">APIClient</span><span class="p">.</span><span class="nf">authorize!</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">)</span>
+<span class="n">api</span><span class="p">.</span><span class="nf">kittens</span><span class="p">.</span><span class="nf">delete</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+</code></pre><pre class="highlight python tab-python"><code><span class="kn">import</span> <span class="nn">kittn</span>
+
+<span class="n">api</span> <span class="o">=</span> <span class="n">kittn</span><span class="o">.</span><span class="n">authorize</span><span class="p">(</span><span class="s">'meowmeowmeow'</span><span class="p">)</span>
+<span class="n">api</span><span class="o">.</span><span class="n">kittens</span><span class="o">.</span><span class="n">delete</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+</code></pre><pre class="highlight shell tab-shell"><code>curl <span class="s2">"http://example.com/api/kittens/2"</span>
+  -X DELETE
+  -H <span class="s2">"Authorization: meowmeowmeow"</span>
+</code></pre><pre class="highlight javascript tab-javascript"><code><span class="kr">const</span> <span class="nx">kittn</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'kittn'</span><span class="p">);</span>
+
+<span class="kd">let</span> <span class="nx">api</span> <span class="o">=</span> <span class="nx">kittn</span><span class="p">.</span><span class="nx">authorize</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">);</span>
+<span class="kd">let</span> <span class="nx">max</span> <span class="o">=</span> <span class="nx">api</span><span class="p">.</span><span class="nx">kittens</span><span class="p">.</span><span class="k">delete</span><span class="p">(</span><span class="mi">2</span><span class="p">);</span>
+</code></pre>
+<blockquote>
+<p>The above command returns JSON structured like this:</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"deleted"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">":("</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<p>This endpoint deletes a specific kitten.</p>
+<h3 id='http-request-3'>HTTP Request</h3>
+<p><code>DELETE http://example.com/kittens/&lt;ID&gt;</code></p>
+<h3 id='url-parameters-2'>URL Parameters</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>ID</td>
+<td>The ID of the kitten to delete</td>
+</tr>
+</tbody></table>
+<h1 id='errors'>Errors</h1>
+<aside class="notice">
+This error section is stored in a separate file in <code>includes/_errors.md</code>. Slate allows you to optionally separate out your docs into many files...just save them to the <code>includes</code> folder and add them to the top of your <code>index.md</code>'s frontmatter. Files are included in the order listed.
+</aside>
+
+<p>The Kittn API uses the following error codes:</p>
+
+<table><thead>
+<tr>
+<th>Error Code</th>
+<th>Meaning</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>400</td>
+<td>Bad Request -- Your request is invalid.</td>
+</tr>
+<tr>
+<td>401</td>
+<td>Unauthorized -- Your API key is wrong.</td>
+</tr>
+<tr>
+<td>403</td>
+<td>Forbidden -- The kitten requested is hidden for administrators only.</td>
+</tr>
+<tr>
+<td>404</td>
+<td>Not Found -- The specified kitten could not be found.</td>
+</tr>
+<tr>
+<td>405</td>
+<td>Method Not Allowed -- You tried to access a kitten with an invalid method.</td>
+</tr>
+<tr>
+<td>406</td>
+<td>Not Acceptable -- You requested a format that isn&#39;t json.</td>
+</tr>
+<tr>
+<td>410</td>
+<td>Gone -- The kitten requested has been removed from our servers.</td>
+</tr>
+<tr>
+<td>418</td>
+<td>I&#39;m a teapot.</td>
+</tr>
+<tr>
+<td>429</td>
+<td>Too Many Requests -- You&#39;re requesting too many kittens! Slow down!</td>
+</tr>
+<tr>
+<td>500</td>
+<td>Internal Server Error -- We had a problem with our server. Try again later.</td>
+</tr>
+<tr>
+<td>503</td>
+<td>Service Unavailable -- We&#39;re temporarily offline for maintenance. Please try again later.</td>
+</tr>
+</tbody></table>
 
       </div>
       <div class="dark-box">
           <div class="lang-selector">
+                <a href="#" data-language-name="shell">shell</a>
+                <a href="#" data-language-name="ruby">ruby</a>
+                <a href="#" data-language-name="python">python</a>
                 <a href="#" data-language-name="javascript">javascript</a>
           </div>
       </div>
